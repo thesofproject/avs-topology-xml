@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Topology>
+    <Name>avs_tdf8532</Name>
+    <Libraries>
+    </Libraries>
+    <AudioFormats>
+        <AudioFormat id="0">
+            <SampleRate>48000</SampleRate>
+            <BitDepth>32</BitDepth>
+            <ChannelMap>0xFFFFFF01</ChannelMap>
+            <ChannelConfig>1</ChannelConfig>
+            <Interleaving>0</Interleaving>
+            <NumChannels>2</NumChannels>
+            <ValidBitDepth>32</ValidBitDepth>
+            <SampleType>0</SampleType>
+        </AudioFormat>
+        <AudioFormat id="1">
+            <SampleRate>48000</SampleRate>
+            <BitDepth>32</BitDepth>
+            <ChannelMap>0xFFFFFFF0</ChannelMap>
+            <ChannelConfig>0</ChannelConfig>
+            <Interleaving>0</Interleaving>
+            <NumChannels>1</NumChannels>
+            <ValidBitDepth>32</ValidBitDepth>
+            <SampleType>0</SampleType>
+        </AudioFormat>
+        <AudioFormat id="2">
+            <SampleRate>48000</SampleRate>
+            <BitDepth>32</BitDepth>
+            <ChannelMap>0xFFFF3210</ChannelMap>
+            <ChannelConfig>5</ChannelConfig>
+            <Interleaving>0</Interleaving>
+            <NumChannels>4</NumChannels>
+            <ValidBitDepth>32</ValidBitDepth>
+            <SampleType>0</SampleType>
+        </AudioFormat>
+    </AudioFormats>
+    <ModuleConfigsBase>
+        <ModuleConfigBase id="0">
+            <Cpc>24000</Cpc>
+            <Ibs>384</Ibs>
+            <Obs>384</Obs>
+            <Pages>0</Pages>
+        </ModuleConfigBase>
+        <ModuleConfigBase id="1">
+            <Cpc>24000</Cpc>
+            <Ibs>192</Ibs>
+            <Obs>192</Obs>
+            <Pages>0</Pages>
+        </ModuleConfigBase>
+        <ModuleConfigBase id="2">
+            <Cpc>24000</Cpc>
+            <Ibs>768</Ibs>
+            <Obs>768</Obs>
+            <Pages>0</Pages>
+        </ModuleConfigBase>
+    </ModuleConfigsBase>
+    <ModuleConfigsExt>
+        <ModuleConfigExt id="0">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>0</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprDMAType>1</CprDMAType>
+            <CprDMABufferSize>768</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="1">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>0</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprVirtualIndex>0</CprVirtualIndex>
+            <CprDMAType>13</CprDMAType>
+            <CprDMABufferSize>768</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="2">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>0</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprVirtualIndex>0</CprVirtualIndex>
+            <CprDMAType>0</CprDMAType>
+            <CprDMABufferSize>768</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="3">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>0</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprVirtualIndex>0</CprVirtualIndex>
+            <CprDMAType>12</CprDMAType>
+            <CprDMABufferSize>768</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="4">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>0</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprVirtualIndex>16</CprVirtualIndex>
+            <CprDMAType>13</CprDMAType>
+            <CprDMABufferSize>768</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="5">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CoreId>0</CoreId>
+            <ProcessingDomain>0</ProcessingDomain>
+            <CprOutAudioFormatId>1</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprVirtualIndex>36</CprVirtualIndex>
+            <CprDMAType>13</CprDMAType>
+            <CprDMABufferSize>384</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="6">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>0</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprVirtualIndex>48</CprVirtualIndex>
+            <CprDMAType>13</CprDMAType>
+            <CprDMABufferSize>768</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="7">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>0</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprVirtualIndex>80</CprVirtualIndex>
+            <CprDMAType>13</CprDMAType>
+            <CprDMABufferSize>768</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="8">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>0</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprVirtualIndex>32</CprVirtualIndex>
+            <CprDMAType>12</CprDMAType>
+            <CprDMABufferSize>768</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="9">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>2</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprVirtualIndex>64</CprVirtualIndex>
+            <CprDMAType>12</CprDMAType>
+            <CprDMABufferSize>1536</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="10">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>0</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprVirtualIndex>80</CprVirtualIndex>
+            <CprDMAType>12</CprDMAType>
+            <CprDMABufferSize>768</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="11">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>0</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprVirtualIndex>34</CprVirtualIndex>
+            <CprDMAType>13</CprDMAType>
+            <CprDMABufferSize>768</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="12">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>0</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprVirtualIndex>32</CprVirtualIndex>
+            <CprDMAType>13</CprDMAType>
+            <CprDMABufferSize>768</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="13">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>1</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprDMAType>1</CprDMAType>
+            <CprDMABufferSize>384</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="14">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>2</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprDMAType>0</CprDMAType>
+            <CprDMABufferSize>1536</CprDMABufferSize>
+        </ModuleConfigExt>
+    </ModuleConfigsExt>
+    <Bindings>
+        <Binding id="0">
+            <TargetTopologyName>avs_tdf8532</TargetTopologyName>
+            <TargetPathTemplateId>1</TargetPathTemplateId>
+            <TargetPipelineId>0</TargetPipelineId>
+            <TargetModuleObjId>0</TargetModuleObjId>
+            <TargetModulePin>0</TargetModulePin>
+            <ModulePin>0</ModulePin>
+            <IsSink>true</IsSink>
+        </Binding>
+        <Binding id="1">
+            <TargetTopologyName>avs_tdf8532</TargetTopologyName>
+            <TargetPathTemplateId>3</TargetPathTemplateId>
+            <TargetPipelineId>0</TargetPipelineId>
+            <TargetModuleObjId>0</TargetModuleObjId>
+            <TargetModulePin>0</TargetModulePin>
+            <ModulePin>0</ModulePin>
+            <IsSink>false</IsSink>
+        </Binding>
+        <Binding id="2">
+            <TargetTopologyName>avs_tdf8532</TargetTopologyName>
+            <TargetPathTemplateId>5</TargetPathTemplateId>
+            <TargetPipelineId>0</TargetPipelineId>
+            <TargetModuleObjId>0</TargetModuleObjId>
+            <TargetModulePin>0</TargetModulePin>
+            <ModulePin>0</ModulePin>
+            <IsSink>true</IsSink>
+        </Binding>
+        <Binding id="3">
+            <TargetTopologyName>avs_tdf8532</TargetTopologyName>
+            <TargetPathTemplateId>9</TargetPathTemplateId>
+            <TargetPipelineId>0</TargetPipelineId>
+            <TargetModuleObjId>0</TargetModuleObjId>
+            <TargetModulePin>0</TargetModulePin>
+            <ModulePin>0</ModulePin>
+            <IsSink>false</IsSink>
+        </Binding>  
+        <Binding id="4">
+            <TargetTopologyName>avs_tdf8532</TargetTopologyName>
+            <TargetPathTemplateId>11</TargetPathTemplateId>
+            <TargetPipelineId>0</TargetPipelineId>
+            <TargetModuleObjId>0</TargetModuleObjId>
+            <TargetModulePin>0</TargetModulePin>
+            <ModulePin>0</ModulePin>
+            <IsSink>true</IsSink>
+        </Binding>
+        <Binding id="5">
+            <TargetTopologyName>avs_tdf8532</TargetTopologyName>
+            <TargetPathTemplateId>13</TargetPathTemplateId>
+            <TargetPipelineId>0</TargetPipelineId>
+            <TargetModuleObjId>0</TargetModuleObjId>
+            <TargetModulePin>0</TargetModulePin>
+            <ModulePin>0</ModulePin>
+            <IsSink>false</IsSink>
+        </Binding>
+        <Binding id="6">
+            <TargetTopologyName>avs_tdf8532</TargetTopologyName>
+            <TargetPathTemplateId>15</TargetPathTemplateId>
+            <TargetPipelineId>0</TargetPipelineId>
+            <TargetModuleObjId>0</TargetModuleObjId>
+            <TargetModulePin>0</TargetModulePin>
+            <ModulePin>0</ModulePin>
+            <IsSink>true</IsSink>
+        </Binding>
+        <Binding id="7">
+            <TargetTopologyName>avs_tdf8532</TargetTopologyName>
+            <TargetPathTemplateId>17</TargetPathTemplateId>
+            <TargetPipelineId>0</TargetPipelineId>
+            <TargetModuleObjId>0</TargetModuleObjId>
+            <TargetModulePin>0</TargetModulePin>
+            <ModulePin>0</ModulePin>
+            <IsSink>false</IsSink>
+        </Binding>
+        <Binding id="8">
+            <TargetTopologyName>avs_tdf8532</TargetTopologyName>
+            <TargetPathTemplateId>21</TargetPathTemplateId>
+            <TargetPipelineId>0</TargetPipelineId>
+            <TargetModuleObjId>0</TargetModuleObjId>
+            <TargetModulePin>0</TargetModulePin>
+            <ModulePin>0</ModulePin>
+            <IsSink>true</IsSink>
+        </Binding>
+    </Bindings>
+    <PipelineConfigs>
+        <PipelineConfig id="0">
+            <RequiredSize>8</RequiredSize>
+            <Priority>0</Priority>
+            <LowPower>false</LowPower>
+            <Trigger>0</Trigger>
+        </PipelineConfig>
+    </PipelineConfigs>
+    <PathTemplates>
+        <PathTemplate id="0" widget_name="ssp0c_fe">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>0</ConfigExtId>
+                                </Module>
+                            </Modules>
+                            <BindingId>0</BindingId>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="1" widget_name="ssp0c_be">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>1</ConfigExtId>
+                                </Module>
+                            </Modules>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="2" widget_name="ssp0p_fe">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>2</ConfigExtId>
+                                </Module>
+                            </Modules>
+                            <BindingId>1</BindingId>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="3" widget_name="ssp0p_be">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>3</ConfigExtId>
+                                </Module>
+                            </Modules>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="4" widget_name="ssp1c_fe">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>0</ConfigExtId>
+                                </Module>
+                            </Modules>
+                            <BindingId>2</BindingId>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="5" widget_name="ssp1c_be">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>4</ConfigExtId>
+                                </Module>
+                            </Modules>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="6" widget_name="ssp2c_fe">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>1</FEAudioFormatId>
+                    <BEAudioFormatId>1</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>1</ConfigBaseId>
+                                    <InAudioFormatId>1</InAudioFormatId>
+                                    <ConfigExtId>5</ConfigExtId>
+                                </Module>
+                                <Module id="1">
+                                    <ConfigBaseId>1</ConfigBaseId>
+                                    <InAudioFormatId>1</InAudioFormatId>
+                                    <ConfigExtId>13</ConfigExtId>
+                                </Module>
+                            </Modules>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="7" widget_name="ssp2c_be">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>1</FEAudioFormatId>
+                    <BEAudioFormatId>1</BEAudioFormatId>
+                    <Pipelines/>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="8" widget_name="ssp2p_fe">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>2</ConfigExtId>
+                                </Module>
+                            </Modules>
+                            <BindingId>3</BindingId>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="9" widget_name="ssp2p_be">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>8</ConfigExtId>
+                                </Module>
+                            </Modules>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="10" widget_name="ssp3c_fe">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>0</ConfigExtId>
+                                </Module>
+                            </Modules>
+                            <BindingId>4</BindingId>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="11" widget_name="ssp3c_be">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>6</ConfigExtId>
+                                </Module>
+                            </Modules>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="12" widget_name="ssp4p_fe">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>2</FEAudioFormatId>
+                    <BEAudioFormatId>2</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>2</ConfigBaseId>
+                                    <InAudioFormatId>2</InAudioFormatId>
+                                    <ConfigExtId>14</ConfigExtId>
+                                </Module>
+                            </Modules>
+                            <BindingId>5</BindingId>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="13" widget_name="ssp4p_be">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>2</FEAudioFormatId>
+                    <BEAudioFormatId>2</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>2</ConfigBaseId>
+                                    <InAudioFormatId>2</InAudioFormatId>
+                                    <ConfigExtId>9</ConfigExtId>
+                                </Module>
+                            </Modules>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="14" widget_name="ssp5c_fe">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>0</ConfigExtId>
+                                </Module>
+                            </Modules>
+                            <BindingId>6</BindingId>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="15" widget_name="ssp5c_be">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>7</ConfigExtId>
+                                </Module>
+                            </Modules>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="16" widget_name="ssp5p_fe">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>2</ConfigExtId>
+                                </Module>
+                            </Modules>
+                            <BindingId>7</BindingId>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="17" widget_name="ssp5p_be">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>10</ConfigExtId>
+                                </Module>
+                            </Modules>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="18" widget_name="ssp2c_aux_fe">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>11</ConfigExtId>
+                                </Module>
+                                <Module id="1">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>0</ConfigExtId>
+                                </Module>
+                            </Modules>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="19" widget_name="ssp2c_aux_be">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines/>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="20" widget_name="ssp2c_tuner_fe">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>0</ConfigExtId>
+                                </Module>
+                            </Modules>
+                            <BindingId>8</BindingId>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="21" widget_name="ssp2c_tuner_be">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>12</ConfigExtId>
+                                </Module>
+                            </Modules>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+    </PathTemplates>
+    <FEDAIs>
+        <FEDAI name="Bluetooth">
+            <CaptureCapabilities>
+                <Formats>24, 32</Formats>
+                <Rates>48000</Rates>
+                <Channels>2</Channels>
+            </CaptureCapabilities>
+            <PlaybackCapabilities>
+                <Formats>24, 32</Formats>
+                <Rates>48000</Rates>
+                <Channels>2</Channels>
+            </PlaybackCapabilities>
+        </FEDAI>
+        <FEDAI name="HDMI In">
+            <CaptureCapabilities>
+                <Formats>24, 32</Formats>
+                <Rates>48000</Rates>
+                <Channels>2</Channels>
+            </CaptureCapabilities>
+        </FEDAI>
+        <FEDAI name="Dirana">
+            <CaptureCapabilities>
+                <Formats>32</Formats>
+                <Rates>48000</Rates>
+                <Channels>1</Channels>
+            </CaptureCapabilities>
+            <PlaybackCapabilities>
+                <Formats>32</Formats>
+                <Rates>48000</Rates>
+                <Channels>2</Channels>
+            </PlaybackCapabilities>
+        </FEDAI>
+        <FEDAI name="Dirana Aux">
+            <CaptureCapabilities>
+                <Formats>32</Formats>
+                <Rates>48000</Rates>
+                <Channels>2</Channels>
+            </CaptureCapabilities>
+        </FEDAI>
+        <FEDAI name="Dirana Tuner">
+            <CaptureCapabilities>
+                <Formats>32</Formats>
+                <Rates>48000</Rates>
+                <Channels>2</Channels>
+            </CaptureCapabilities>
+        </FEDAI>
+        <FEDAI name="Modem">
+            <CaptureCapabilities>
+                <Formats>24, 32</Formats>
+                <Rates>48000</Rates>
+                <Channels>2</Channels>
+            </CaptureCapabilities>
+        </FEDAI>
+        <FEDAI name="Amplifier">
+            <PlaybackCapabilities>
+                <Formats>32</Formats>
+                <Rates>48000</Rates>
+                <Channels>4</Channels>
+            </PlaybackCapabilities>
+        </FEDAI>
+        <FEDAI name="Test Pin">
+            <CaptureCapabilities>
+                <Formats>24, 32</Formats>
+                <Rates>48000</Rates>
+                <Channels>2</Channels>
+            </CaptureCapabilities>
+            <PlaybackCapabilities>
+                <Formats>24, 32</Formats>
+                <Rates>48000</Rates>
+                <Channels>2</Channels>
+            </PlaybackCapabilities>
+        </FEDAI>
+    </FEDAIs>
+    <Graphs>
+        <Graph name="Bluetooth-capture_ssp0_Rx">
+            <Routes>
+                <Route sink="Bluetooth-capture" source="ssp0c_fe"/>
+                <Route sink="ssp0c_fe" source="ssp0c_be"/>
+                <Route sink="ssp0c_be" source="ssp0 Rx"/>
+            </Routes>
+        </Graph>
+        <Graph name="ssp0_Tx_Bluetooth-playback">
+            <Routes>
+                <Route sink="ssp0 Tx" source="ssp0p_be"/>
+                <Route sink="ssp0p_be" source="ssp0p_fe"/>
+                <Route sink="ssp0p_fe" source="Bluetooth-playback"/>
+            </Routes>
+        </Graph>
+        <Graph name="HDMI In-capture_ssp1_Rx">
+            <Routes>
+                <Route sink="HDMI In-capture" source="ssp1c_fe"/>
+                <Route sink="ssp1c_fe" source="ssp1c_be"/>
+                <Route sink="ssp1c_be" source="ssp1 Rx"/>
+            </Routes>
+        </Graph>
+        <Graph name="Dirana-capture_ssp2_Rx">
+            <Routes>
+                <Route sink="Dirana-capture" source="ssp2c_fe"/>
+                <Route sink="ssp2c_fe" source="ssp2c_be"/>
+                <Route sink="ssp2c_be" source="ssp2:4 Rx"/>
+            </Routes>
+        </Graph>
+        <Graph name="ssp2_Tx_Dirana-playback">
+            <Routes>
+                <Route sink="ssp2:4 Tx" source="ssp2p_be"/>
+                <Route sink="ssp2p_be" source="ssp2p_fe"/>
+                <Route sink="ssp2p_fe" source="Dirana-playback"/>
+            </Routes>
+        </Graph>
+        <Graph name="Dirana Aux-capture_ssp2_Rx">
+            <Routes>
+                <Route sink="Dirana Aux-capture" source="ssp2c_aux_fe"/>
+                <Route sink="ssp2c_aux_fe" source="ssp2c_aux_be"/>
+                <Route sink="ssp2c_aux_be" source="ssp2:2 Rx"/>
+            </Routes>
+        </Graph>
+        <Graph name="Dirana Tuner-capture_ssp2_Rx">
+            <Routes>
+                <Route sink="Dirana Tuner-capture" source="ssp2c_tuner_fe"/>
+                <Route sink="ssp2c_tuner_fe" source="ssp2c_tuner_be"/>
+                <Route sink="ssp2c_tuner_be" source="ssp2 Rx"/>
+            </Routes>
+        </Graph>
+        <Graph name="Modem-capture_ssp3_Rx">
+            <Routes>
+                <Route sink="Modem-capture" source="ssp3c_fe"/>
+                <Route sink="ssp3c_fe" source="ssp3c_be"/>
+                <Route sink="ssp3c_be" source="ssp3 Rx"/>
+            </Routes>
+        </Graph>
+        <Graph name="ssp4_Tx_Amplifier-playback">
+            <Routes>
+                <Route sink="ssp4 Tx" source="ssp4p_be"/>
+                <Route sink="ssp4p_be" source="ssp4p_fe"/>
+                <Route sink="ssp4p_fe" source="Amplifier-playback"/>
+            </Routes>
+        </Graph>
+        <Graph name="Test Pin-capture_ssp5_Rx">
+            <Routes>
+                <Route sink="Test Pin-capture" source="ssp5c_fe"/>
+                <Route sink="ssp5c_fe" source="ssp5c_be"/>
+                <Route sink="ssp5c_be" source="ssp5 Rx"/>
+            </Routes>
+        </Graph>
+        <Graph name="ssp5_Tx_Test Pin-playback">
+            <Routes>
+                <Route sink="ssp5 Tx" source="ssp5p_be"/>
+                <Route sink="ssp5p_be" source="ssp5p_fe"/>
+                <Route sink="ssp5p_fe" source="Test Pin-playback"/>
+            </Routes>
+        </Graph>
+    </Graphs>
+</Topology>
