@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Topology>
+    <Name>avs_hda_1ep</Name>
+    <Libraries>
+    </Libraries>
+    <AudioFormats>
+        <AudioFormat id="0">
+            <SampleRate>48000</SampleRate>
+            <BitDepth>32</BitDepth>
+            <ChannelMap>0xFFFFFF10</ChannelMap>
+            <ChannelConfig>1</ChannelConfig>
+            <Interleaving>0</Interleaving>
+            <NumChannels>2</NumChannels>
+            <ValidBitDepth>24</ValidBitDepth>
+            <SampleType>0</SampleType>
+        </AudioFormat>
+        <AudioFormat id="1">
+            <SampleRate>48000</SampleRate>
+            <BitDepth>16</BitDepth>
+            <ChannelMap>0xFFFFFF10</ChannelMap>
+            <ChannelConfig>1</ChannelConfig>
+            <Interleaving>0</Interleaving>
+            <NumChannels>2</NumChannels>
+            <ValidBitDepth>16</ValidBitDepth>
+            <SampleType>0</SampleType>
+        </AudioFormat>
+    </AudioFormats>
+    <ModuleConfigsBase>
+        <ModuleConfigBase id="0">
+            <Cpc>10000</Cpc>
+            <Ibs>384</Ibs>
+            <Obs>384</Obs>
+            <Pages>0</Pages>
+        </ModuleConfigBase>
+        <ModuleConfigBase id="1">
+            <Cpc>10000</Cpc>
+            <Ibs>192</Ibs>
+            <Obs>384</Obs>
+            <Pages>0</Pages>
+        </ModuleConfigBase>
+        <ModuleConfigBase id="2">
+            <Cpc>10000</Cpc>
+            <Ibs>384</Ibs>
+            <Obs>192</Obs>
+            <Pages>0</Pages>
+        </ModuleConfigBase>
+    </ModuleConfigsBase>
+    <ModuleConfigsExt>
+        <ModuleConfigExt id="0">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>0</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprDMAType>1</CprDMAType>
+            <CprDMABufferSize>768</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="1">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>0</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprVirtualIndex>0</CprVirtualIndex>
+            <CprDMAType>9</CprDMAType>
+            <CprDMABufferSize>768</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="2">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>0</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprDMAType>0</CprDMAType>
+            <CprDMABufferSize>768</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="3">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>0</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprVirtualIndex>0</CprVirtualIndex>
+            <CprDMAType>8</CprDMAType>
+            <CprDMABufferSize>768</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="4">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>0</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprDMAType>0</CprDMAType>
+            <CprDMABufferSize>768</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="5">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>1</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprDMAType>1</CprDMAType>
+            <CprDMABufferSize>768</CprDMABufferSize>
+        </ModuleConfigExt>
+    </ModuleConfigsExt>
+    <PipelineConfigs>
+        <PipelineConfig id="0">
+            <RequiredSize>2</RequiredSize>
+            <Priority>0</Priority>
+            <LowPower>false</LowPower>
+            <Trigger>0</Trigger>
+        </PipelineConfig>
+    </PipelineConfigs>
+    <Bindings>
+        <Binding id="0">
+            <TargetTopologyName>avs_hda_1ep</TargetTopologyName>
+            <TargetPathTemplateId>1</TargetPathTemplateId>
+            <TargetPipelineId>0</TargetPipelineId>
+            <TargetModuleId>0</TargetModuleId>
+            <TargetModulePin>0</TargetModulePin>
+            <ModulePin>0</ModulePin>
+            <IsSink>true</IsSink>
+        </Binding>
+        <Binding id="1">
+            <TargetTopologyName>avs_hda_1ep</TargetTopologyName>
+            <TargetPathTemplateId>3</TargetPathTemplateId>
+            <TargetPipelineId>0</TargetPipelineId>
+            <TargetModuleId>0</TargetModuleId>
+            <TargetModulePin>0</TargetModulePin>
+            <ModulePin>0</ModulePin>
+            <IsSink>false</IsSink>
+        </Binding>
+    </Bindings>
+    <PathTemplates>
+        <PathTemplate id="0" widget_name="cpu0c_fe">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines> 
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id ="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>0</ConfigExtId>
+                                </Module>
+                            </Modules>
+                            <BindingId>0</BindingId>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+                <Path id="1">
+                    <FEAudioFormatId>1</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines> 
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id ="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>5</ConfigExtId>
+                                </Module>
+                            </Modules>
+                            <BindingId>0</BindingId>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="1" widget_name="cpu0c_be">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines> 
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id ="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>1</ConfigExtId>
+                                </Module>
+                            </Modules>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+                <Path id="1">
+                    <FEAudioFormatId>1</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines> 
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id ="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>1</ConfigExtId>
+                                </Module>
+                            </Modules>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="2" widget_name="cpu0p_fe">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines> 
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id ="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>2</ConfigExtId>
+                                </Module>
+                            </Modules>
+                            <BindingId>1</BindingId>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+                <Path id="1">
+                    <FEAudioFormatId>1</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines> 
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id ="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>4</ConfigExtId>
+                                </Module>
+                            </Modules>
+                            <BindingId>1</BindingId>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="3" widget_name="cpu0p_be">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines> 
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id ="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>3</ConfigExtId>
+                                </Module>
+                            </Modules>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+                <Path id="1">
+                    <FEAudioFormatId>1</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines> 
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id ="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>3</ConfigExtId>
+                                </Module>
+                            </Modules>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+    </PathTemplates>
+    <FEDAIs>
+        <FEDAI name="HDAudio Analog">
+            <CaptureCapabilities>
+                <Formats>16, 24, 32</Formats>
+                <Rates>48000</Rates>
+                <Channels>2</Channels>
+            </CaptureCapabilities>
+            <PlaybackCapabilities>
+                <Formats>16, 24, 32</Formats>
+                <Rates>48000</Rates>
+                <Channels>2</Channels>
+            </PlaybackCapabilities>
+        </FEDAI>
+    </FEDAIs>
+    <Graphs>
+        <Graph name="HDAudio Analog-capture_cpu0_Rx">
+            <Routes>
+                <Route sink="HDAudio Analog-capture" source="cpu0c_fe"/>
+                <Route sink="cpu0c_fe" source="cpu0c_be"/>
+                <Route sink="cpu0c_be" source="hdaudioB0D0-cpu0 Rx"/>
+            </Routes>
+        </Graph>
+        <Graph name="cpu0_Tx_HDAudio Analog-playback">
+            <Routes>
+                <Route sink="hdaudioB0D0-cpu0 Tx" source="cpu0p_be"/>
+                <Route sink="cpu0p_be" source="cpu0p_fe"/>
+                <Route sink="cpu0p_fe" source="HDAudio Analog-playback"/>
+            </Routes>
+        </Graph>
+    </Graphs>
+</Topology>
