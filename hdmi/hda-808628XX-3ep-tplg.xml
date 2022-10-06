@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Topology>
+    <Name>avs_hdmi</Name>
+    <Libraries>
+    </Libraries>
+    <AudioFormats>
+        <AudioFormat id="0">
+            <SampleRate>48000</SampleRate>
+            <BitDepth>16</BitDepth>
+            <ChannelMap>0xFFFFFF10</ChannelMap>
+            <ChannelConfig>1</ChannelConfig>
+            <Interleaving>0</Interleaving>
+            <NumChannels>2</NumChannels>
+            <ValidBitDepth>16</ValidBitDepth>
+            <SampleType>0</SampleType>
+        </AudioFormat>
+    </AudioFormats>
+    <ModuleConfigsBase>
+        <ModuleConfigBase id="0">
+            <Cpc>10000</Cpc>
+            <Ibs>192</Ibs>
+            <Obs>192</Obs>
+            <Pages>0</Pages>
+        </ModuleConfigBase>
+    </ModuleConfigsBase>
+    <ModuleConfigsExt>
+        <ModuleConfigExt id="0">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>0</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprDMAType>0</CprDMAType>
+            <CprDMABufferSize>768</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="1">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>0</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprDMAType>8</CprDMAType>
+            <CprDMABufferSize>768</CprDMABufferSize>
+        </ModuleConfigExt>
+    </ModuleConfigsExt>
+    <PipelineConfigs>
+        <PipelineConfig id="0">
+            <RequiredSize>1</RequiredSize>
+            <Priority>0</Priority>
+            <LowPower>false</LowPower>
+            <Trigger>0</Trigger>
+        </PipelineConfig>
+    </PipelineConfigs>
+    <Bindings>
+        <Binding id="0">
+            <TargetTopologyName>avs_hdmi</TargetTopologyName>
+            <TargetPathTemplateId>1</TargetPathTemplateId>
+            <TargetPipelineId>0</TargetPipelineId>
+            <TargetModuleId>0</TargetModuleId>
+            <TargetModulePin>0</TargetModulePin>
+            <ModulePin>0</ModulePin>
+            <IsSink>false</IsSink>
+        </Binding>
+        <Binding id="1">
+            <TargetTopologyName>avs_hdmi</TargetTopologyName>
+            <TargetPathTemplateId>3</TargetPathTemplateId>
+            <TargetPipelineId>0</TargetPipelineId>
+            <TargetModuleId>0</TargetModuleId>
+            <TargetModulePin>0</TargetModulePin>
+            <ModulePin>0</ModulePin>
+            <IsSink>false</IsSink>
+        </Binding>
+        <Binding id="2">
+            <TargetTopologyName>avs_hdmi</TargetTopologyName>
+            <TargetPathTemplateId>5</TargetPathTemplateId>
+            <TargetPipelineId>0</TargetPipelineId>
+            <TargetModuleId>0</TargetModuleId>
+            <TargetModulePin>0</TargetModulePin>
+            <ModulePin>0</ModulePin>
+            <IsSink>false</IsSink>
+        </Binding>
+    </Bindings>
+    <PathTemplates>
+        <PathTemplate id="0" widget_name="hdmi1_fe">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>0</ConfigExtId>
+                                </Module>
+                            </Modules>
+                            <BindingId>0</BindingId>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="1" widget_name="hdmi1_be">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>1</ConfigExtId>
+                                </Module>
+                            </Modules>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="2" widget_name="hdmi2_fe">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>0</ConfigExtId>
+                                </Module>
+                            </Modules>
+                            <BindingId>1</BindingId>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="3" widget_name="hdmi2_be">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>1</ConfigExtId>
+                                </Module>
+                            </Modules>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="4" widget_name="hdmi3_fe">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>0</ConfigExtId>
+                                </Module>
+                            </Modules>
+                            <BindingId>2</BindingId>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="5" widget_name="hdmi3_be">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>0</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>1</ConfigExtId>
+                                </Module>
+                            </Modules>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+    </PathTemplates>
+    <FEDAIs>
+        <FEDAI name="HDMI1">
+            <PlaybackCapabilities>
+                <Formats>16</Formats>
+                <Rates>48000</Rates>
+                <Channels>2</Channels>
+            </PlaybackCapabilities>
+        </FEDAI>
+        <FEDAI name="HDMI2">
+            <PlaybackCapabilities>
+                <Formats>16</Formats>
+                <Rates>48000</Rates>
+                <Channels>2</Channels>
+            </PlaybackCapabilities>
+        </FEDAI>
+        <FEDAI name="HDMI3">
+            <PlaybackCapabilities>
+                <Formats>16</Formats>
+                <Rates>48000</Rates>
+                <Channels>2</Channels>
+            </PlaybackCapabilities>
+        </FEDAI>
+    </FEDAIs>
+    <Graphs>
+        <Graph name="hdaudioB0D2-cpu0 Tx-HDMI1-playback">
+            <Routes>
+                <Route sink="hdaudioB0D2-cpu0 Tx" source="hdmi1_be"/>
+                <Route sink="hdmi1_be" source="hdmi1_fe"/>
+                <Route sink="hdmi1_fe" source="HDMI1-playback"/>
+            </Routes>
+        </Graph>
+        <Graph name="hdaudioB0D2-cpu1 Tx-HDMI2-playback">
+            <Routes>
+                <Route sink="hdaudioB0D2-cpu1 Tx" source="hdmi2_be"/>
+                <Route sink="hdmi2_be" source="hdmi2_fe"/>
+                <Route sink="hdmi2_fe" source="HDMI2-playback"/>
+            </Routes>
+        </Graph>
+        <Graph name="hdaudioB0D2-cpu2 Tx-HDMI3-playback">
+            <Routes>
+                <Route sink="hdaudioB0D2-cpu2 Tx" source="hdmi3_be"/>
+                <Route sink="hdmi3_be" source="hdmi3_fe"/>
+                <Route sink="hdmi3_fe" source="HDMI3-playback"/>
+            </Routes>
+        </Graph>
+    </Graphs>
+</Topology>
