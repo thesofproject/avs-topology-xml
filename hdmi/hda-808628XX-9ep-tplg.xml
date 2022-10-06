@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Topology>
-    <Name>avs_hdmi</Name>
+    <Name>avs_hdmi_9ep</Name>
     <Libraries>
     </Libraries>
     <AudioFormats>
@@ -49,7 +49,7 @@
     </PipelineConfigs>
     <Bindings>
         <Binding id="0">
-            <TargetTopologyName>avs_hdmi</TargetTopologyName>
+            <TargetTopologyName>avs_hdmi_9ep</TargetTopologyName>
             <TargetPathTemplateId>1</TargetPathTemplateId>
             <TargetPipelineId>0</TargetPipelineId>
             <TargetModuleId>0</TargetModuleId>
@@ -58,7 +58,7 @@
             <IsSink>false</IsSink>
         </Binding>
         <Binding id="1">
-            <TargetTopologyName>avs_hdmi</TargetTopologyName>
+            <TargetTopologyName>avs_hdmi_9ep</TargetTopologyName>
             <TargetPathTemplateId>3</TargetPathTemplateId>
             <TargetPipelineId>0</TargetPipelineId>
             <TargetModuleId>0</TargetModuleId>
@@ -67,7 +67,7 @@
             <IsSink>false</IsSink>
         </Binding>
         <Binding id="2">
-            <TargetTopologyName>avs_hdmi</TargetTopologyName>
+            <TargetTopologyName>avs_hdmi_9ep</TargetTopologyName>
             <TargetPathTemplateId>5</TargetPathTemplateId>
             <TargetPipelineId>0</TargetPipelineId>
             <TargetModuleId>0</TargetModuleId>
@@ -76,7 +76,7 @@
             <IsSink>false</IsSink>
         </Binding>
         <Binding id="3">
-            <TargetTopologyName>avs_hdmi</TargetTopologyName>
+            <TargetTopologyName>avs_hdmi_9ep</TargetTopologyName>
             <TargetPathTemplateId>7</TargetPathTemplateId>
             <TargetPipelineId>0</TargetPipelineId>
             <TargetModuleId>0</TargetModuleId>
@@ -85,7 +85,7 @@
             <IsSink>false</IsSink>
         </Binding>
         <Binding id="4">
-            <TargetTopologyName>avs_hdmi</TargetTopologyName>
+            <TargetTopologyName>avs_hdmi_9ep</TargetTopologyName>
             <TargetPathTemplateId>9</TargetPathTemplateId>
             <TargetPipelineId>0</TargetPipelineId>
             <TargetModuleId>0</TargetModuleId>
@@ -94,7 +94,7 @@
             <IsSink>false</IsSink>
         </Binding>
         <Binding id="5">
-            <TargetTopologyName>avs_hdmi</TargetTopologyName>
+            <TargetTopologyName>avs_hdmi_9ep</TargetTopologyName>
             <TargetPathTemplateId>11</TargetPathTemplateId>
             <TargetPipelineId>0</TargetPipelineId>
             <TargetModuleId>0</TargetModuleId>
@@ -103,7 +103,7 @@
             <IsSink>false</IsSink>
         </Binding>
         <Binding id="6">
-            <TargetTopologyName>avs_hdmi</TargetTopologyName>
+            <TargetTopologyName>avs_hdmi_9ep</TargetTopologyName>
             <TargetPathTemplateId>13</TargetPathTemplateId>
             <TargetPipelineId>0</TargetPipelineId>
             <TargetModuleId>0</TargetModuleId>
@@ -112,7 +112,7 @@
             <IsSink>false</IsSink>
         </Binding>
         <Binding id="7">
-            <TargetTopologyName>avs_hdmi</TargetTopologyName>
+            <TargetTopologyName>avs_hdmi_9ep</TargetTopologyName>
             <TargetPathTemplateId>15</TargetPathTemplateId>
             <TargetPipelineId>0</TargetPipelineId>
             <TargetModuleId>0</TargetModuleId>
@@ -121,7 +121,7 @@
             <IsSink>false</IsSink>
         </Binding>
         <Binding id="8">
-            <TargetTopologyName>avs_hdmi</TargetTopologyName>
+            <TargetTopologyName>avs_hdmi_9ep</TargetTopologyName>
             <TargetPathTemplateId>17</TargetPathTemplateId>
             <TargetPipelineId>0</TargetPipelineId>
             <TargetModuleId>0</TargetModuleId>
