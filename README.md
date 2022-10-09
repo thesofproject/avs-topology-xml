@@ -6,6 +6,11 @@ Configuration files for Intel AudioVoiceSpeech (AVS) driver
    * [HDAudio](#hdaudio)
    * [HDMI](#hdmi)
    * [I2S](#i2s)
+ * [Contributing](#contributing)
+   * [Commit title](#commit-title)
+     * [Scoping](#scoping)
+   * [Commit message](#commit-message)
+   * [Commit tags](#commit-tags)
 
 # Overview
 
@@ -66,3 +71,59 @@ or nine -endpoint category. References for all of them are available.
 Least generic out of all available. Often a specific configuration is used per codec device. See
 [sound/soc/intel/avs/boards](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/sound/soc/intel/avs/boards)
 to check whether given configuration is supported by the kernel driver.
+
+# Contributing
+
+While building a topology file requires some AudioDSP knowledge, especially in the driver <->
+firmware interaction area, all contributions are welcome. Project follows submission guidelines
+similar to those of high-profile projects, such as the Linux kernel.
+
+## Commit title
+
+Commit message title line length is limited to 72 characters.
+
+### Scoping
+
+Scoping shall be used to indicate the context of introduced changes, through adding subdirectory tag
+('tag: ') at the beginning of commit's title. Leave the scope out only when submitting repo-wide
+changes.
+
+The scopes for subdirectories go as follows:
+```
+dmic/		dmic
+hda/		hda
+hdmi/		hdmi
+i2s/		i2s
+```
+
+## Commit message
+
+Regardless of type of change you want to submit, it must be described.
+Please follow [Describe your changes](
+https://www.kernel.org/doc/html/latest/process/submitting-patches.html#describe-your-changes) guide
+for the best practises of doing so. The guide is quite lengthy, the essence is captured below:
+
+*   State the motivation behind the change
+*   Be transparent, do not hide things
+*   Describe user impact if any
+*   Use imperative mood
+*   The lower level the problem is, the more detailed the description
+    should be.
+*   Ensure any links or references appended are actually working
+*   Keep the line width with 72 characters margin
+
+## Commit tags
+
+[Sign your work](https://www.kernel.org/doc/html/latest/process/submitting-patches.html#sign-your-work-the-developer-s-certificate-of-origin).
+
+Optionally, at the bottom of commit message tags (kind of keywords) can be appended. These tags
+serve informational purposes, further enhancing code documentation and enabling fixes propagation
+through automated tasks. Below are guides for a range of such tags:
+
+When to use [Acked-by:, Cc:, and Co-developed-by:](
+https://www.kernel.org/doc/html/latest/process/submitting-patches.html#when-to-use-acked-by-cc-and-co-developed-by)\
+Using [Reported-by:, Tested-by:, Reviewed-by:, Suggested-by: and Fixes:](
+https://www.kernel.org/doc/html/latest/process/submitting-patches.html#using-reported-by-tested-by-reviewed-by-suggested-by-and-fixes)\
+The final paragraphs of [Describe your changes](
+https://www.kernel.org/doc/html/latest/process/submitting-patches.html#describe-your-changes) help
+setup git config so appending correctly formatted **Fixes:** tag becomes trivial.
