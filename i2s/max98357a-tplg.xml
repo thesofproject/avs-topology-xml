@@ -62,7 +62,6 @@
 	    <CprOutAudioFormatId>1</CprOutAudioFormatId>
             <CprBlobFormatId>2</CprBlobFormatId>
             <CprFeatureMask>0</CprFeatureMask>
-            <CprVirtualIndex>80</CprVirtualIndex>
             <CprDMAType>12</CprDMAType>
             <CprDMABufferSize>768</CprDMABufferSize>
         </ModuleConfigExt>
