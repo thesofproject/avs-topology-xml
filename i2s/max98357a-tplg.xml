@@ -52,7 +52,7 @@
     <ModuleConfigsExt>
         <ModuleConfigExt id="0">
             <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
-            <CprOutAudioFormatId>0</CprOutAudioFormatId>
+            <CprOutAudioFormatId>2</CprOutAudioFormatId>
             <CprFeatureMask>0</CprFeatureMask>
             <CprDMAType>0</CprDMAType>
             <CprDMABufferSize>768</CprDMABufferSize>
@@ -119,7 +119,7 @@
                             <Modules>
                                 <Module id="0">
                                     <ConfigBaseId>1</ConfigBaseId>
-                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <InAudioFormatId>2</InAudioFormatId>
                                     <ConfigExtId>1</ConfigExtId>
                                 </Module>
                             </Modules>
