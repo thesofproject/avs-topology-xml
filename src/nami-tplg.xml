@@ -540,9 +540,9 @@
           <Module type="copier" description="dmic_hifi_in" instance="8" affinity="0" dev_type="DMIC"
                   port="PDM" domain="LL" converter_mask="0" fixup_mask="0" tdm_slot="0"
                   fast_mode="0" module_position="SOURCE"/>
-          <Module type="copier" description="dmic_hifi_in" instance="9" affinity="0" dev_type="NONE"
-                  domain="LL" converter_mask="0" fixup_mask="0" tdm_slot="0" fast_mode="0"
-                  module_position="SINK"/>
+          <Module type="copier" description="dmic_hifi_in" instance="9" affinity="0"
+                  dev_type="HOST_DMA" domain="LL" converter_mask="0" fixup_mask="0" tdm_slot="0"
+                  fast_mode="0" module_position="SINK"/>
         </Modules>
       </Path>
       <Path name="media2_out" id="6" priority="0" create_priority="0" order="0" direction="capture"
