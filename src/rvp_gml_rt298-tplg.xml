@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<System name="system" version="0072">
+  <SubsystemType name="AudioDSPManifest" type="ManifestData" version="3.0.0">
+    <FirmwareConfig>
+      <!-- Astate table can have up to 3 enteries -->
+      <AstateTableConfigs>
+        <AstateTableConfig kcps="400000" clk_src="7"/>
+      </AstateTableConfigs>
+    </FirmwareConfig>
+    <DriverConfig description="driver configuration">
+      <FeatureMask feature1="true" feature2="false"/>
+    </DriverConfig>
+  </SubsystemType>
+  <SubsystemType name="AudioDSP" type="AudioDSP" version="2.0">
+    <ModuleTypes>
+      <ModuleType name="mixin" uuid="39656EB2-3B71-4049-8D3F-F92CD5C43C09" module_id="0"
+                  loadable="false" library_name="base_fw" input_pin_type="homogeneous"
+                  output_pin_type="homogeneous" input_pins="1" output_pins="3" auto_start="false"
+                  instance_max_count="32" major_version="0" minor_version="0" hotfix_version="0"
+                  build_version="0">
+        <ModuleResourceList>
+          <ModuleResources res_idx="0" is_pages="1" cps="2666000" ibs="384" obs="384"
+                           dma_buffer_size="0" cpc="2666" module_flags="0" obls="0">
+            <InputPins>
+              <InputPinFormat pin_index="0" ibs="384"/>
+            </InputPins>
+            <OutputPins>
+              <OutputPinFormat pin_index="0" obs="384"/>
+            </OutputPins>
+          </ModuleResources>
+        </ModuleResourceList>
+        <ModuleInterfaceList>
+          <Interfaces intf_idx="0">
+            <Interface dir="in" pin_id="0">
+              <AudioFormat sample_rate="48000" sample_container="32" channel_count="2"
+                           sample_size="32" channel_map="0xFFFFFF10"
+                           channel_config="CHANNEL_CONFIG_STEREO" interleaving="0x0"
+                           sample_type="0x0"/>
+            </Interface>
+            <Interface dir="out" pin_id="0">
+              <AudioFormat sample_rate="48000" sample_container="32" channel_count="2"
+                           sample_size="32" channel_map="0xFFFFFF10"
+                           channel_config="CHANNEL_CONFIG_STEREO" interleaving="0x0"
+                           sample_type="0x0"/>
+            </Interface>
+          </Interfaces>
+        </ModuleInterfaceList>
+      </ModuleType>
+      <ModuleType name="mixout" uuid="3C56505A-24D7-418F-BDDC-C1F5A3AC2AE0" module_id="1"
+                  loadable="false" library_name="base_fw" input_pin_type="homogeneous"
+                  output_pin_type="homogeneous" input_pins="8" output_pins="1" auto_start="false"
+                  instance_max_count="32" major_version="0" minor_version="0" hotfix_version="0"
+                  build_version="0">
+        <ModuleResourceList>
+          <ModuleResources res_idx="0" is_pages="1" cps="1521000" ibs="384" obs="384"
+                           dma_buffer_size="0" cpc="1521" module_flags="0" obls="0">
+            <InputPins>
+              <InputPinFormat pin_index="0" ibs="384"/>
+            </InputPins>
+            <OutputPins>
+              <OutputPinFormat pin_index="0" obs="384"/>
+            </OutputPins>
+          </ModuleResources>
+        </ModuleResourceList>
+        <ModuleInterfaceList>
+          <Interfaces intf_idx="0">
+            <Interface dir="in" pin_id="0">
+              <AudioFormat sample_rate="48000" sample_container="32" channel_count="2"
+                           sample_size="32" channel_map="0xFFFFFF10"
+                           channel_config="CHANNEL_CONFIG_STEREO" interleaving="0x0"
+                           sample_type="0x0"/>
+            </Interface>
+            <Interface dir="out" pin_id="0">
+              <AudioFormat sample_rate="48000" sample_container="32" channel_count="2"
+                           sample_size="32" channel_map="0xFFFFFF10"
+                           channel_config="CHANNEL_CONFIG_STEREO" interleaving="0x0"
+                           sample_type="0x0"/>
+            </Interface>
+          </Interfaces>
+        </ModuleInterfaceList>
+      </ModuleType>
+      <ModuleType name="copier" uuid="9BA00C83-CA12-4A83-943C-1FA2E82F9DDA" module_id="2"
+                  loadable="false" library_name="base_fw" input_pin_type="homogeneous"
+                  output_pin_type="homogeneous" input_pins="1" output_pins="4" auto_start="false"
+                  instance_max_count="32" major_version="0" minor_version="0" hotfix_version="0"
+                  build_version="0">
+        <ModuleResourceList>
+          <ModuleResources res_idx="0" is_pages="1" cps="2453000" ibs="192" obs="384"
+                           dma_buffer_size="384" cpc="2455" module_flags="0" obls="0">
+            <InputPins>
+              <InputPinFormat pin_index="0" ibs="192"/>
+            </InputPins>
+            <OutputPins>
+              <OutputPinFormat pin_index="0" obs="192"/>
+            </OutputPins>
+          </ModuleResources>
+          <ModuleResources res_idx="1" is_pages="1" cps="2453000" ibs="384" obs="384"
+                           dma_buffer_size="384" cpc="2455" module_flags="0" obls="0">
+            <InputPins>
+              <InputPinFormat pin_index="0" ibs="384"/>
+            </InputPins>
+            <OutputPins>
+              <OutputPinFormat pin_index="0" obs="384"/>
+            </OutputPins>
+          </ModuleResources>
+          <ModuleResources res_idx="2" is_pages="1" cps="2453000" ibs="384" obs="192"
+                           dma_buffer_size="384" cpc="2455" module_flags="0" obls="0">
+            <InputPins>
+              <InputPinFormat pin_index="0" ibs="384"/>
+            </InputPins>
+            <OutputPins>
+              <OutputPinFormat pin_index="0" obs="192"/>
+            </OutputPins>
+          </ModuleResources>
+          <ModuleResources res_idx="3" is_pages="1" cps="2453000" ibs="192" obs="192"
+                           dma_buffer_size="192" cpc="2455" module_flags="0" obls="0">
+            <InputPins>
+              <InputPinFormat pin_index="0" ibs="192"/>
+            </InputPins>
+            <OutputPins>
+              <OutputPinFormat pin_index="0" obs="192"/>
+            </OutputPins>
+          </ModuleResources>
+          <ModuleResources res_idx="4" is_pages="1" cps="2453000" ibs="576" obs="576"
+                           dma_buffer_size="576" cpc="2455" module_flags="0" obls="0">
+            <InputPins>
+              <InputPinFormat pin_index="0" ibs="576"/>
+            </InputPins>
+            <OutputPins>
+              <OutputPinFormat pin_index="0" obs="576"/>
+            </OutputPins>
+          </ModuleResources>
+          <ModuleResources res_idx="5" is_pages="1" cps="2453000" ibs="768" obs="768"
+                           dma_buffer_size="768" cpc="2455" module_flags="0" obls="0">
+            <InputPins>
+              <InputPinFormat pin_index="0" ibs="768"/>
+            </InputPins>
+            <OutputPins>
+              <OutputPinFormat pin_index="0" obs="768"/>
+            </OutputPins>
+          </ModuleResources>
+        </ModuleResourceList>
+        <ModuleInterfaceList>
+          <Interfaces intf_idx="0">
+            <Interface dir="in" pin_id="0">
+              <AudioFormat sample_rate="48000" sample_container="16" channel_count="2"
+                           sample_size="16" channel_map="0xFFFFFF10"
+                           channel_config="CHANNEL_CONFIG_STEREO" interleaving="0x0"
+                           sample_type="0x0"/>
+            </Interface>
+            <Interface dir="out" pin_id="0">
+              <AudioFormat sample_rate="48000" sample_container="32" channel_count="2"
+                           sample_size="32" channel_map="0xFFFFFF10"
+                           channel_config="CHANNEL_CONFIG_STEREO" interleaving="0x0"
+                           sample_type="0x0"/>
+            </Interface>
+          </Interfaces>
+          <Interfaces intf_idx="1">
+            <Interface dir="in" pin_id="0">
+              <AudioFormat sample_rate="48000" sample_container="32" channel_count="2"
+                           sample_size="32" channel_map="0xFFFFFF10"
+                           channel_config="CHANNEL_CONFIG_STEREO" interleaving="0x0"
+                           sample_type="0x0"/>
+            </Interface>
+            <Interface dir="out" pin_id="0">
+              <AudioFormat sample_rate="48000" sample_container="32" channel_count="2"
+                           sample_size="24" channel_map="0xFFFFFF10"
+                           channel_config="CHANNEL_CONFIG_STEREO" interleaving="0x0"
+                           sample_type="0x0"/>
+            </Interface>
+          </Interfaces>
+          <Interfaces intf_idx="2">
+            <Interface dir="in" pin_id="0">
+              <AudioFormat sample_rate="48000" sample_container="32" channel_count="2"
+                           sample_size="24" channel_map="0xFFFFFF10"
+                           channel_config="CHANNEL_CONFIG_STEREO" interleaving="0x0"
+                           sample_type="0x0"/>
+            </Interface>
+            <Interface dir="out" pin_id="0">
+              <AudioFormat sample_rate="48000" sample_container="32" channel_count="2"
+                           sample_size="32" channel_map="0xFFFFFF10"
+                           channel_config="CHANNEL_CONFIG_STEREO" interleaving="0x0"
+                           sample_type="0x0"/>
+            </Interface>
+          </Interfaces>
+          <Interfaces intf_idx="3">
+            <Interface dir="in" pin_id="0">
+              <AudioFormat sample_rate="48000" sample_container="32" channel_count="2"
+                           sample_size="32" channel_map="0xFFFFFF10"
+                           channel_config="CHANNEL_CONFIG_STEREO" interleaving="0x0"
+                           sample_type="0x0"/>
+            </Interface>
+            <Interface dir="out" pin_id="0">
+              <AudioFormat sample_rate="48000" sample_container="16" channel_count="2"
+                           sample_size="16" channel_map="0xFFFFFF10"
+                           channel_config="CHANNEL_CONFIG_STEREO" interleaving="0x0"
+                           sample_type="0x0"/>
+            </Interface>
+          </Interfaces>
+          <Interfaces intf_idx="4">
+            <Interface dir="in" pin_id="0">
+              <AudioFormat sample_rate="48000" sample_container="16" channel_count="2"
+                           sample_size="16" channel_map="0xFFFFFF10"
+                           channel_config="CHANNEL_CONFIG_STEREO" interleaving="0x0"
+                           sample_type="0x0"/>
+            </Interface>
+            <Interface dir="out" pin_id="0">
+              <AudioFormat sample_rate="48000" sample_container="16" channel_count="2"
+                           sample_size="16" channel_map="0xFFFFFF10"
+                           channel_config="CHANNEL_CONFIG_STEREO" interleaving="0x0"
+                           sample_type="0x0"/>
+            </Interface>
+          </Interfaces>
+          <Interfaces intf_idx="5">
+            <Interface dir="in" pin_id="0">
+              <AudioFormat sample_rate="48000" sample_container="16" channel_count="4"
+                           sample_size="16" channel_map="0xFFFF3210"
+                           channel_config="CHANNEL_CONFIG_QUATRO" interleaving="0x0"
+                           sample_type="0x0"/>
+            </Interface>
+            <Interface dir="out" pin_id="0">
+              <AudioFormat sample_rate="48000" sample_container="16" channel_count="4"
+                           sample_size="16" channel_map="0xFFFF3210"
+                           channel_config="CHANNEL_CONFIG_QUATRO" interleaving="0x0"
+                           sample_type="0x0"/>
+            </Interface>
+          </Interfaces>
+          <Interfaces intf_idx="6">
+            <Interface dir="in" pin_id="0">
+              <AudioFormat sample_rate="48000" sample_container="16" channel_count="6"
+                           sample_size="16" channel_map="0xFF543210"
+                           channel_config="CHANNEL_CONFIG_5_1" interleaving="0x0"
+                           sample_type="0x0"/>
+            </Interface>
+            <Interface dir="out" pin_id="0">
+              <AudioFormat sample_rate="48000" sample_container="16" channel_count="6"
+                           sample_size="16" channel_map="0xFF543210"
+                           channel_config="CHANNEL_CONFIG_5_1" interleaving="0x0"
+                           sample_type="0x0"/>
+            </Interface>
+          </Interfaces>
+          <Interfaces intf_idx="7">
+            <Interface dir="in" pin_id="0">
+              <AudioFormat sample_rate="48000" sample_container="16" channel_count="8"
+                           sample_size="16" channel_map="0x76543210"
+                           channel_config="CHANNEL_CONFIG_7_1" interleaving="0x0"
+                           sample_type="0x0"/>
+            </Interface>
+            <Interface dir="out" pin_id="0">
+              <AudioFormat sample_rate="48000" sample_container="16" channel_count="8"
+                           sample_size="16" channel_map="0x76543210"
+                           channel_config="CHANNEL_CONFIG_7_1" interleaving="0x0"
+                           sample_type="0x0"/>
+            </Interface>
+          </Interfaces>
+        </ModuleInterfaceList>
+      </ModuleType>
+    </ModuleTypes>
+  </SubsystemType>
+  <SubsystemType name="IntelSST" type="AudioDSP" version="1">
+    <Paths description="">
+      <!-- CODEC PLAYBACK -->
+      <Path name="media0_in" id="0" priority="0" create_priority="0" order="0" direction="playback"
+            conn_type="HOST_DMA" device="System Playback" mode="dspmode">
+        <PathConfigurations description="configurations">
+          <PathConfiguration config_name="config0" config_idx="0">
+            <PcmFormats>
+              <PcmFormat dir="in" sample_rate="48000" channel_count="2" bps="16"/>
+              <PcmFormat dir="out" sample_rate="48000" channel_count="2" bps="32"/>
+            </PcmFormats>
+            <ModuleParams module="copier" instance="0" res_idx="0" intf_idx="0"/>
+            <ModuleParams module="mixin" instance="0" res_idx="0" intf_idx="0"/>
+            <PathResources mem_pages="1"/>
+          </PathConfiguration>
+        </PathConfigurations>
+        <Links>
+          <Link type="direct">
+            <From module="copier" instance="0" interface="out0"/>
+            <To module="mixin" instance="0" interface="in0"/>
+          </Link>
+        </Links>
+        <Modules description="list of modules">
+          <Module type="copier" description="media0_in" instance="0" affinity="0"
+                  dev_type="HOST_DMA" domain="LL" tdm_slot="0" fast_mode="0"
+                  module_position="SOURCE"/>
+          <Module type="mixin" description="media0_in" instance="0" affinity="0" dev_type="NONE"
+                  domain="LL" tdm_slot="0" fast_mode="0" module_position="SINK"/>
+        </Modules>
+      </Path>
+      <Path name="codec0_out" id="1" priority="0" create_priority="0" order="7" direction="playback"
+            conn_type="LINK_DMA" port="codec0_out" mode="dspmode">
+        <PathConfigurations description="configurations">
+          <PathConfiguration config_name="config0" config_idx="0">
+            <PcmFormats>
+              <PcmFormat dir="in" sample_rate="48000" channel_count="2" bps="32"/>
+              <PcmFormat dir="out" sample_rate="48000" channel_count="2" bps="24"/>
+            </PcmFormats>
+            <ModuleParams module="mixout" instance="0" res_idx="0" intf_idx="0"/>
+            <ModuleParams module="copier" instance="1" res_idx="1" intf_idx="1"/>
+            <PathResources mem_pages="1"/>
+          </PathConfiguration>
+        </PathConfigurations>
+        <Links>
+          <Link type="direct">
+            <From module="mixout" instance="0" interface="out0"/>
+            <To module="copier" instance="1" interface="in0"/>
+          </Link>
+        </Links>
+        <Modules description="list of modules">
+          <Module type="mixout" description="codec0_out" instance="0" affinity="0" dev_type="NONE"
+                  domain="LL" tdm_slot="0" fast_mode="0" module_position="SOURCE"/>
+          <Module type="copier" description="codec0_out" instance="1" affinity="0" dev_type="I2S"
+                  port="SSP2" domain="LL" tdm_slot="0" fast_mode="0" module_position="SINK"/>
+        </Modules>
+      </Path>
+      <!-- CODEC CAPTURE -->
+      <Path name="codec0_in" id="2" priority="0" create_priority="0" order="0" direction="capture"
+            conn_type="LINK_DMA" port="codec0_in" mode="dspmode">
+        <PathConfigurations description="configurations">
+          <PathConfiguration config_name="config0" config_idx="0">
+            <PcmFormats>
+              <PcmFormat dir="in" sample_rate="48000" channel_count="2" bps="24"/>
+              <PcmFormat dir="out" sample_rate="48000" channel_count="2" bps="32"/>
+            </PcmFormats>
+            <ModuleParams module="copier" instance="2" res_idx="1" intf_idx="2"/>
+            <ModuleParams module="mixin" instance="1" res_idx="0" intf_idx="0"/>
+            <PathResources mem_pages="1"/>
+          </PathConfiguration>
+        </PathConfigurations>
+        <Links>
+          <Link type="direct">
+            <From module="copier" instance="2" interface="out0"/>
+            <To module="mixin" instance="1" interface="in0"/>
+          </Link>
+        </Links>
+        <Modules description="list of modules">
+          <Module type="copier" description="codec0_in" instance="2" affinity="0" dev_type="I2S"
+                  port="SSP2" domain="LL" tdm_slot="0" fast_mode="0" module_position="SOURCE"/>
+          <Module type="mixin" description="codec0_in" instance="1" affinity="0" dev_type="NONE"
+                  domain="LL" tdm_slot="0" fast_mode="0" module_position="SINK"/>
+        </Modules>
+      </Path>
+      <Path name="media0_out" id="3" priority="0" create_priority="0" order="7" direction="capture"
+            conn_type="HOST_DMA" device="System Capture" mode="dspmode">
+        <PathConfigurations description="configurations">
+          <PathConfiguration config_name="config0" config_idx="0">
+            <PcmFormats>
+              <PcmFormat dir="in" sample_rate="48000" channel_count="2" bps="32"/>
+              <PcmFormat dir="out" sample_rate="48000" channel_count="2" bps="16"/>
+            </PcmFormats>
+            <ModuleParams module="mixout" instance="1" res_idx="0" intf_idx="0"/>
+            <ModuleParams module="copier" instance="3" res_idx="2" intf_idx="3"/>
+            <PathResources mem_pages="1"/>
+          </PathConfiguration>
+        </PathConfigurations>
+        <Links>
+          <Link type="direct">
+            <From module="mixout" instance="1" interface="out0"/>
+            <To module="copier" instance="3" interface="in0"/>
+          </Link>
+        </Links>
+        <Modules description="list of modules">
+          <Module type="mixout" description="media0_out" instance="1" affinity="0" dev_type="NONE"
+                  domain="LL" tdm_slot="0" fast_mode="0" module_position="SOURCE"/>
+          <Module type="copier" description="media0_out" instance="3" affinity="0"
+                  dev_type="HOST_DMA" domain="LL" tdm_slot="0" fast_mode="0"
+                  module_position="SINK"/>
+        </Modules>
+      </Path>
+      <!-- DMIC CAPTURE -->
+      <Path name="mch_cap_in" id="4" priority="0" create_priority="0" order="0" direction="capture"
+            conn_type="HOST_DMA" port="dmic01_hifi" device="DMIC Capture" mode="dspmode">
+        <PathConfigurations description="configurations">
+          <PathConfiguration config_name="config0" config_idx="0">
+            <PcmFormats>
+              <PcmFormat dir="in" sample_rate="48000" channel_count="2" bps="16"/>
+              <PcmFormat dir="out" sample_rate="48000" channel_count="2" bps="16"/>
+            </PcmFormats>
+            <ModuleParams module="copier" instance="4" res_idx="3" intf_idx="4"/>
+            <ModuleParams module="copier" instance="5" res_idx="3" intf_idx="4"/>
+            <PathResources mem_pages="2"/>
+          </PathConfiguration>
+          <PathConfiguration config_name="config1" config_idx="1">
+            <PcmFormats>
+              <PcmFormat dir="in" sample_rate="48000" channel_count="4" bps="16"/>
+              <PcmFormat dir="out" sample_rate="48000" channel_count="4" bps="16"/>
+            </PcmFormats>
+            <ModuleParams module="copier" instance="4" res_idx="1" intf_idx="5"/>
+            <ModuleParams module="copier" instance="5" res_idx="1" intf_idx="5"/>
+            <PathResources mem_pages="2"/>
+          </PathConfiguration>
+        </PathConfigurations>
+        <Links>
+          <Link type="direct">
+            <From module="copier" instance="4" interface="out0"/>
+            <To module="copier" instance="5" interface="in0"/>
+          </Link>
+        </Links>
+        <Modules description="list of modules">
+          <Module type="copier" description="mch_cap_in" instance="4" affinity="0" dev_type="DMIC"
+                  port="PDM" domain="LL" tdm_slot="0" fast_mode="0" module_position="SOURCE"/>
+          <Module type="copier" description="mch_cap_in" instance="5" affinity="0"
+                  dev_type="HOST_DMA" domain="LL" tdm_slot="0" fast_mode="0"
+                  module_position="SINK"/>
+        </Modules>
+      </Path>
+      <!-- HDMI PLAYBACKS -->
+      <Path name="hdmi1_out" id="11" priority="0" create_priority="0" order="0" direction="playback"
+            conn_type="HDMI_HOST_DMA" port="iDisp1_out" device="HDMI1 Playback" mode="dspmode">
+        <PathConfigurations description="configurations">
+          <PathConfiguration config_name="config0" config_idx="0">
+            <PcmFormats>
+              <PcmFormat dir="in" sample_rate="48000" channel_count="2" bps="16"/>
+              <PcmFormat dir="out" sample_rate="48000" channel_count="2" bps="16"/>
+            </PcmFormats>
+            <ModuleParams module="copier" instance="6" res_idx="3" intf_idx="4"/>
+            <ModuleParams module="copier" instance="7" res_idx="3" intf_idx="4"/>
+            <PathResources mem_pages="2"/>
+          </PathConfiguration>
+          <PathConfiguration config_name="config1" config_idx="1">
+            <PcmFormats>
+              <PcmFormat dir="in" sample_rate="48000" channel_count="4" bps="16"/>
+              <PcmFormat dir="out" sample_rate="48000" channel_count="4" bps="16"/>
+            </PcmFormats>
+            <ModuleParams module="copier" instance="6" res_idx="1" intf_idx="5"/>
+            <ModuleParams module="copier" instance="7" res_idx="1" intf_idx="5"/>
+            <PathResources mem_pages="2"/>
+          </PathConfiguration>
+          <PathConfiguration config_name="config2" config_idx="2">
+            <PcmFormats>
+              <PcmFormat dir="in" sample_rate="48000" channel_count="6" bps="16"/>
+              <PcmFormat dir="out" sample_rate="48000" channel_count="6" bps="16"/>
+            </PcmFormats>
+            <ModuleParams module="copier" instance="6" res_idx="4" intf_idx="6"/>
+            <ModuleParams module="copier" instance="7" res_idx="4" intf_idx="6"/>
+            <PathResources mem_pages="2"/>
+          </PathConfiguration>
+          <PathConfiguration config_name="config3" config_idx="3">
+            <PcmFormats>
+              <PcmFormat dir="in" sample_rate="48000" channel_count="8" bps="16"/>
+              <PcmFormat dir="out" sample_rate="48000" channel_count="8" bps="16"/>
+            </PcmFormats>
+            <ModuleParams module="copier" instance="6" res_idx="5" intf_idx="7"/>
+            <ModuleParams module="copier" instance="7" res_idx="5" intf_idx="7"/>
+            <PathResources mem_pages="2"/>
+          </PathConfiguration>
+        </PathConfigurations>
+        <Links>
+          <Link type="direct">
+            <From module="copier" instance="6" interface="out0"/>
+            <To module="copier" instance="7" interface="in0"/>
+          </Link>
+        </Links>
+        <Modules description="list of modules">
+          <Module type="copier" description="hdmi1_out" instance="6" affinity="0"
+                  dev_type="HOST_DMA" domain="LL" tdm_slot="0" fast_mode="0"
+                  module_position="SOURCE"/>
+          <Module type="copier" description="hdmi1_out" instance="7" affinity="0"
+                  dev_type="LINK_DMA" domain="LL" tdm_slot="0" fast_mode="0"
+                  module_position="SINK"/>
+        </Modules>
+      </Path>
+      <Path name="hdmi2_out" id="12" priority="0" create_priority="0" order="0" direction="playback"
+            conn_type="HDMI_HOST_DMA" port="iDisp2_out" device="HDMI2 Playback" mode="dspmode">
+        <PathConfigurations description="configurations">
+          <PathConfiguration config_name="config0" config_idx="0">
+            <PcmFormats>
+              <PcmFormat dir="in" sample_rate="48000" channel_count="2" bps="16"/>
+              <PcmFormat dir="out" sample_rate="48000" channel_count="2" bps="16"/>
+            </PcmFormats>
+            <ModuleParams module="copier" instance="8" res_idx="3" intf_idx="4"/>
+            <ModuleParams module="copier" instance="9" res_idx="3" intf_idx="4"/>
+            <PathResources mem_pages="2"/>
+          </PathConfiguration>
+          <PathConfiguration config_name="config1" config_idx="1">
+            <PcmFormats>
+              <PcmFormat dir="in" sample_rate="48000" channel_count="4" bps="16"/>
+              <PcmFormat dir="out" sample_rate="48000" channel_count="4" bps="16"/>
+            </PcmFormats>
+            <ModuleParams module="copier" instance="8" res_idx="1" intf_idx="5"/>
+            <ModuleParams module="copier" instance="9" res_idx="1" intf_idx="5"/>
+            <PathResources mem_pages="2"/>
+          </PathConfiguration>
+          <PathConfiguration config_name="config2" config_idx="2">
+            <PcmFormats>
+              <PcmFormat dir="in" sample_rate="48000" channel_count="6" bps="16"/>
+              <PcmFormat dir="out" sample_rate="48000" channel_count="6" bps="16"/>
+            </PcmFormats>
+            <ModuleParams module="copier" instance="8" res_idx="4" intf_idx="6"/>
+            <ModuleParams module="copier" instance="9" res_idx="4" intf_idx="6"/>
+            <PathResources mem_pages="2"/>
+          </PathConfiguration>
+          <PathConfiguration config_name="config3" config_idx="3">
+            <PcmFormats>
+              <PcmFormat dir="in" sample_rate="48000" channel_count="8" bps="16"/>
+              <PcmFormat dir="out" sample_rate="48000" channel_count="8" bps="16"/>
+            </PcmFormats>
+            <ModuleParams module="copier" instance="8" res_idx="5" intf_idx="7"/>
+            <ModuleParams module="copier" instance="9" res_idx="5" intf_idx="7"/>
+            <PathResources mem_pages="2"/>
+          </PathConfiguration>
+        </PathConfigurations>
+        <Links>
+          <Link type="direct">
+            <From module="copier" instance="8" interface="out0"/>
+            <To module="copier" instance="9" interface="in0"/>
+          </Link>
+        </Links>
+        <Modules description="list of modules">
+          <Module type="copier" description="hdmi2_out" instance="8" affinity="0"
+                  dev_type="HOST_DMA" domain="LL" tdm_slot="0" fast_mode="0"
+                  module_position="SOURCE"/>
+          <Module type="copier" description="hdmi2_out" instance="9" affinity="0"
+                  dev_type="LINK_DMA" domain="LL" tdm_slot="0" fast_mode="0"
+                  module_position="SINK"/>
+        </Modules>
+      </Path>
+      <Path name="hdmi3_out" id="13" priority="0" create_priority="0" order="0" direction="playback"
+            conn_type="HDMI_HOST_DMA" port="iDisp3_out" device="HDMI3 Playback" mode="dspmode">
+        <PathConfigurations description="configurations">
+          <PathConfiguration config_name="config0" config_idx="0">
+            <PcmFormats>
+              <PcmFormat dir="in" sample_rate="48000" channel_count="2" bps="16"/>
+              <PcmFormat dir="out" sample_rate="48000" channel_count="2" bps="16"/>
+            </PcmFormats>
+            <ModuleParams module="copier" instance="10" res_idx="3" intf_idx="4"/>
+            <ModuleParams module="copier" instance="11" res_idx="3" intf_idx="4"/>
+            <PathResources mem_pages="2"/>
+          </PathConfiguration>
+          <PathConfiguration config_name="config1" config_idx="1">
+            <PcmFormats>
+              <PcmFormat dir="in" sample_rate="48000" channel_count="4" bps="16"/>
+              <PcmFormat dir="out" sample_rate="48000" channel_count="4" bps="16"/>
+            </PcmFormats>
+            <ModuleParams module="copier" instance="10" res_idx="1" intf_idx="5"/>
+            <ModuleParams module="copier" instance="11" res_idx="1" intf_idx="5"/>
+            <PathResources mem_pages="2"/>
+          </PathConfiguration>
+          <PathConfiguration config_name="config2" config_idx="2">
+            <PcmFormats>
+              <PcmFormat dir="in" sample_rate="48000" channel_count="6" bps="16"/>
+              <PcmFormat dir="out" sample_rate="48000" channel_count="6" bps="16"/>
+            </PcmFormats>
+            <ModuleParams module="copier" instance="10" res_idx="4" intf_idx="6"/>
+            <ModuleParams module="copier" instance="11" res_idx="4" intf_idx="6"/>
+            <PathResources mem_pages="2"/>
+          </PathConfiguration>
+          <PathConfiguration config_name="config3" config_idx="3">
+            <PcmFormats>
+              <PcmFormat dir="in" sample_rate="48000" channel_count="8" bps="16"/>
+              <PcmFormat dir="out" sample_rate="48000" channel_count="8" bps="16"/>
+            </PcmFormats>
+            <ModuleParams module="copier" instance="10" res_idx="5" intf_idx="7"/>
+            <ModuleParams module="copier" instance="11" res_idx="5" intf_idx="7"/>
+            <PathResources mem_pages="2"/>
+          </PathConfiguration>
+        </PathConfigurations>
+        <Links>
+          <Link type="direct">
+            <From module="copier" instance="10" interface="out0"/>
+            <To module="copier" instance="11" interface="in0"/>
+          </Link>
+        </Links>
+        <Modules description="list of modules">
+          <Module type="copier" description="hdmi3_out" instance="10" affinity="0"
+                  dev_type="HOST_DMA" domain="LL" tdm_slot="0" fast_mode="0"
+                  module_position="SOURCE"/>
+          <Module type="copier" description="hdmi3_out" instance="11" affinity="0"
+                  dev_type="LINK_DMA" domain="LL" tdm_slot="0" fast_mode="0"
+                  module_position="SINK"/>
+        </Modules>
+      </Path>
+      <!-- CODEC1 PLAYBACK (UNUSED) -->
+      <Path name="codec1_out" id="5" priority="0" create_priority="0" order="7" direction="playback"
+            conn_type="LINK_DMA" port="codec1_out" mode="dspmode">
+        <PathConfigurations description="configurations">
+          <PathConfiguration config_name="config0" config_idx="0">
+            <PcmFormats>
+              <PcmFormat dir="in" sample_rate="48000" channel_count="2" bps="32"/>
+              <PcmFormat dir="out" sample_rate="48000" channel_count="2" bps="24"/>
+            </PcmFormats>
+            <ModuleParams module="mixout" instance="2" res_idx="0" intf_idx="0"/>
+            <ModuleParams module="copier" instance="12" res_idx="1" intf_idx="1"/>
+            <PathResources mem_pages="1"/>
+          </PathConfiguration>
+        </PathConfigurations>
+        <Links>
+          <Link type="direct">
+            <From module="mixout" instance="2" interface="out0"/>
+            <To module="copier" instance="12" interface="in0"/>
+          </Link>
+        </Links>
+        <Modules description="list of modules">
+          <Module type="mixout" description="codec1_out" instance="2" affinity="0" dev_type="NONE"
+                  domain="LL" tdm_slot="0" fast_mode="0" module_position="SOURCE"/>
+          <Module type="copier" description="codec1_out" instance="12" affinity="0" dev_type="I2S"
+                  port="SSP2" domain="LL" tdm_slot="0" fast_mode="0" module_position="SINK"/>
+        </Modules>
+      </Path>
+      <Path name="codec1_in" id="6" priority="0" create_priority="0" order="0" direction="capture"
+            conn_type="LINK_DMA" port="codec1_in" mode="dspmode">
+        <PathConfigurations description="configurations">
+          <PathConfiguration config_name="config0" config_idx="0">
+            <PcmFormats>
+              <PcmFormat dir="in" sample_rate="48000" channel_count="2" bps="24"/>
+              <PcmFormat dir="out" sample_rate="48000" channel_count="2" bps="32"/>
+            </PcmFormats>
+            <ModuleParams module="copier" instance="13" res_idx="1" intf_idx="2"/>
+            <ModuleParams module="mixin" instance="2" res_idx="0" intf_idx="0"/>
+            <PathResources mem_pages="1"/>
+          </PathConfiguration>
+        </PathConfigurations>
+        <Links>
+          <Link type="direct">
+            <From module="copier" instance="13" interface="out0"/>
+            <To module="mixin" instance="2" interface="in0"/>
+          </Link>
+        </Links>
+        <Modules description="list of modules">
+          <Module type="copier" description="codec1_in" instance="13" affinity="0" dev_type="I2S"
+                  port="SSP2" domain="LL" tdm_slot="0" fast_mode="0" module_position="SOURCE"/>
+          <Module type="mixin" description="codec1_in" instance="2" affinity="0" dev_type="NONE"
+                  domain="LL" tdm_slot="0" fast_mode="0" module_position="SINK"/>
+        </Modules>
+      </Path>
+    </Paths>
+    <PathConnectors description="">
+      <PathConnector type="mixer">
+        <Input path_name="media0_in" module="mixin" instance="0" interface="any"/>
+        <Output path_name="codec0_out" module="mixout" instance="0" interface="any"/>
+      </PathConnector>
+      <PathConnector type="mixer">
+        <Input path_name="codec0_in" module="mixin" instance="1" interface="any"/>
+        <Output path_name="media0_out" module="mixout" instance="1" interface="any"/>
+      </PathConnector>
+      <PathConnector type="mixer">
+        <Input path_name="media0_in" module="mixin" instance="0" interface="any"/>
+        <Output path_name="codec1_out" module="mixout" instance="2" interface="any"/>
+      </PathConnector>
+      <PathConnector type="mixer">
+        <Input path_name="codec1_in" module="mixin" instance="2" interface="any"/>
+        <Output path_name="media0_out" module="mixout" instance="1" interface="any"/>
+      </PathConnector>
+    </PathConnectors>
+  </SubsystemType>
+</System>
