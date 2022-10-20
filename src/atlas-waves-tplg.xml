@@ -254,14 +254,14 @@
           </Interfaces>
           <Interfaces intf_idx="10">
             <Interface dir="in" pin_id="0">
-              <AudioFormat sample_rate="48000" sample_container="16" channel_count="4"
-                           sample_size="16" channel_map="0xFFFF3210"
+              <AudioFormat sample_rate="48000" sample_container="32" channel_count="4"
+                           sample_size="24" channel_map="0xFFFF3210"
                            channel_config="CHANNEL_CONFIG_QUATRO" interleaving="0x0"
                            sample_type="0x0"/>
             </Interface>
             <Interface dir="out" pin_id="0">
-              <AudioFormat sample_rate="48000" sample_container="16" channel_count="4"
-                           sample_size="16" channel_map="0xFFFF3210"
+              <AudioFormat sample_rate="48000" sample_container="32" channel_count="4"
+                           sample_size="24" channel_map="0xFFFF3210"
                            channel_config="CHANNEL_CONFIG_QUATRO" interleaving="0x0"
                            sample_type="0x0"/>
             </Interface>
@@ -780,8 +780,17 @@
               <PcmFormat dir="in" sample_rate="48000" channel_count="4" bps="16"/>
               <PcmFormat dir="out" sample_rate="48000" channel_count="4" bps="16"/>
             </PcmFormats>
-            <ModuleParams module="copier" instance="8" res_idx="7" intf_idx="10"/>
-            <ModuleParams module="copier" instance="9" res_idx="7" intf_idx="10"/>
+            <ModuleParams module="copier" instance="8" res_idx="7" intf_idx="4"/>
+            <ModuleParams module="copier" instance="9" res_idx="7" intf_idx="4"/>
+            <PathResources mem_pages="2"/>
+          </PathConfiguration>
+          <PathConfiguration config_name="config1" config_idx="1">
+            <PcmFormats>
+              <PcmFormat dir="in" sample_rate="48000" channel_count="4" bps="24"/>
+              <PcmFormat dir="out" sample_rate="48000" channel_count="4" bps="24"/>
+            </PcmFormats>
+            <ModuleParams module="copier" instance="8" res_idx="8" intf_idx="10"/>
+            <ModuleParams module="copier" instance="9" res_idx="8" intf_idx="10"/>
             <PathResources mem_pages="2"/>
           </PathConfiguration>
         </PathConfigurations>
