@@ -73,6 +73,15 @@
               <OutputPinFormat pin_index="0" obs="192"/>
             </OutputPins>
           </ModuleResources>
+          <ModuleResources res_idx="6" is_pages="1" ibs="768" obs="768" dma_buffer_size="1536"
+                           cpc="60000" module_flags="0" obls="0">
+            <InputPins>
+              <InputPinFormat pin_index="0" ibs="768"/>
+            </InputPins>
+            <OutputPins>
+              <OutputPinFormat pin_index="0" obs="768"/>
+            </OutputPins>
+          </ModuleResources>
         </ModuleResourceList>
         <ModuleInterfaceList>
           <Interfaces intf_idx="0">
@@ -198,6 +207,20 @@
               <AudioFormat sample_rate="48000" sample_container="16" channel_count="2"
                            sample_size="16" channel_map="0xFFFFFF10"
                            channel_config="CHANNEL_CONFIG_STEREO" interleaving="0x0"
+                           sample_type="0x0"/>
+            </Interface>
+          </Interfaces>
+          <Interfaces intf_idx="9">
+            <Interface dir="in" pin_id="0">
+              <AudioFormat sample_rate="48000" sample_container="32" channel_count="4"
+                           sample_size="24" channel_map="0xFFFF3210"
+                           channel_config="CHANNEL_CONFIG_QUATRO" interleaving="0x0"
+                           sample_type="0x0"/>
+            </Interface>
+            <Interface dir="out" pin_id="0">
+              <AudioFormat sample_rate="48000" sample_container="32" channel_count="4"
+                           sample_size="24" channel_map="0xFFFF3210"
+                           channel_config="CHANNEL_CONFIG_QUATRO" interleaving="0x0"
                            sample_type="0x0"/>
             </Interface>
           </Interfaces>
@@ -724,6 +747,15 @@
             </PcmFormats>
             <ModuleParams module="copier" instance="15" res_idx="0" intf_idx="5"/>
             <ModuleParams module="copier" instance="16" res_idx="0" intf_idx="5"/>
+            <PathResources mem_pages="2"/>
+          </PathConfiguration>
+          <PathConfiguration config_name="config1" config_idx="1">
+            <PcmFormats>
+              <PcmFormat dir="in" sample_rate="48000" channel_count="4" bps="24"/>
+              <PcmFormat dir="out" sample_rate="48000" channel_count="4" bps="24"/>
+            </PcmFormats>
+            <ModuleParams module="copier" instance="15" res_idx="6" intf_idx="9"/>
+            <ModuleParams module="copier" instance="16" res_idx="6" intf_idx="9"/>
             <PathResources mem_pages="2"/>
           </PathConfiguration>
         </PathConfigurations>
