@@ -1,10 +1,18 @@
 Configuration files for the skylake sound driver
 ================================================
 
+ * [Important](#important)
  * [Overview](#overview)
    * [Supported configurations](#supported-configurations)
- * [Important](#important)
  * [Contributing](#contributing)
+
+# Important
+
+The skylake-driver as well as all its collaterals is **deprecated in favour of the
+[avs-driver](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/sound/soc/intel/avs)**.
+It's recommended for end users of newer Linux kernel version to switch to the latter solution. See
+the main branch of this repository for information regarding topology files targeting the
+avs-driver.
 
 # Overview
 
@@ -73,14 +81,6 @@ Names in the left column match platform driver's name, not the name of actual C 
 | glk_da7219_mx98357a	| No		| Yorp		| Variation of bxt_da7219_max98357a
 | cnl_rt274		| Yes		| RVP		| Driver never provided to upstream
 | icl_rt274		| Yes		| RVP		| Driver never provided to upstream
-
-# Important
-
-The skylake-driver as well as all its collaterals is **deprecated in favour of the
-[avs-driver](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/sound/soc/intel/avs)**.
-It's recommended for end users of newer Linux kernel version to switch to the latter solution. See
-the main branch of this repository for information regarding topology files targeting the
-avs-driver.
 
 # Contributing
 
