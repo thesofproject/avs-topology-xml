@@ -738,7 +738,7 @@
         </Modules>
       </Path>
       <Path name="mch_cap_in" id="11" priority="0" create_priority="0" order="0" direction="capture"
-            conn_type="NONE" port="dmic01_hifi" device="DMIC Capture" mode="dspmode">
+            conn_type="HOST_DMA" port="dmic01_hifi" device="DMIC Capture" mode="dspmode">
         <PathConfigurations description="configurations">
           <PathConfiguration config_name="config0" config_idx="0">
             <PcmFormats>
