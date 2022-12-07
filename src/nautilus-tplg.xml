@@ -213,13 +213,13 @@
           <Interfaces intf_idx="9">
             <Interface dir="in" pin_id="0">
               <AudioFormat sample_rate="48000" sample_container="32" channel_count="4"
-                           sample_size="24" channel_map="0xFFFF3210"
+                           sample_size="24" channel_map="0xFFFF4320"
                            channel_config="CHANNEL_CONFIG_QUATRO" interleaving="0x0"
                            sample_type="0x0"/>
             </Interface>
             <Interface dir="out" pin_id="0">
               <AudioFormat sample_rate="48000" sample_container="32" channel_count="4"
-                           sample_size="24" channel_map="0xFFFF3210"
+                           sample_size="24" channel_map="0xFFFF4320"
                            channel_config="CHANNEL_CONFIG_QUATRO" interleaving="0x0"
                            sample_type="0x0"/>
             </Interface>
