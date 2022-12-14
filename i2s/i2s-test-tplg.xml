@@ -11,6 +11,16 @@
             <ChannelConfig>1</ChannelConfig>
             <Interleaving>0</Interleaving>
             <NumChannels>2</NumChannels>
+            <ValidBitDepth>24</ValidBitDepth>
+            <SampleType>0</SampleType>
+        </AudioFormat>
+        <AudioFormat id="1">
+            <SampleRate>48000</SampleRate>
+            <BitDepth>32</BitDepth>
+            <ChannelMap>0xFFFFFF10</ChannelMap>
+            <ChannelConfig>1</ChannelConfig>
+            <Interleaving>0</Interleaving>
+            <NumChannels>2</NumChannels>
             <ValidBitDepth>32</ValidBitDepth>
             <SampleType>0</SampleType>
         </AudioFormat>
@@ -49,6 +59,36 @@
         <ModuleConfigExt id="3">
             <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
             <CprOutAudioFormatId>0</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprVirtualIndex>0</CprVirtualIndex>
+            <CprDMAType>12</CprDMAType>
+            <CprDMABufferSize>1536</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="4">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>1</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprDMAType>1</CprDMAType>
+            <CprDMABufferSize>768</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="5">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>1</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprVirtualIndex>0</CprVirtualIndex>
+            <CprDMAType>13</CprDMAType>
+            <CprDMABufferSize>1536</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="6">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>1</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprDMAType>0</CprDMAType>
+            <CprDMABufferSize>768</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="7">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>1</CprOutAudioFormatId>
             <CprFeatureMask>0</CprFeatureMask>
             <CprVirtualIndex>0</CprVirtualIndex>
             <CprDMAType>12</CprDMAType>
@@ -103,6 +143,23 @@
                         </Pipeline>
                     </Pipelines>
                 </Path>
+                <Path id="1">
+                    <FEAudioFormatId>1</FEAudioFormatId>
+                    <BEAudioFormatId>1</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>1</InAudioFormatId>
+                                    <ConfigExtId>4</ConfigExtId>
+                                </Module>
+                            </Modules>
+                            <BindingId>0</BindingId>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
             </Paths>
         </PathTemplate>
         <PathTemplate id="1" widget_name="ssp%dc_be">
@@ -118,6 +175,22 @@
                                     <ConfigBaseId>0</ConfigBaseId>
                                     <InAudioFormatId>0</InAudioFormatId>
                                     <ConfigExtId>1</ConfigExtId>
+                                </Module>
+                            </Modules>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+                <Path id="1">
+                    <FEAudioFormatId>1</FEAudioFormatId>
+                    <BEAudioFormatId>1</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>1</InAudioFormatId>
+                                    <ConfigExtId>5</ConfigExtId>
                                 </Module>
                             </Modules>
                         </Pipeline>
@@ -144,6 +217,23 @@
                         </Pipeline>
                     </Pipelines>
                 </Path>
+                <Path id="1">
+                    <FEAudioFormatId>1</FEAudioFormatId>
+                    <BEAudioFormatId>1</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>1</InAudioFormatId>
+                                    <ConfigExtId>6</ConfigExtId>
+                                </Module>
+                            </Modules>
+                            <BindingId>1</BindingId>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
             </Paths>
         </PathTemplate>
         <PathTemplate id="3" widget_name="ssp%dp_be">
@@ -164,18 +254,34 @@
                         </Pipeline>
                     </Pipelines>
                 </Path>
+                <Path id="1">
+                    <FEAudioFormatId>1</FEAudioFormatId>
+                    <BEAudioFormatId>1</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>1</InAudioFormatId>
+                                    <ConfigExtId>7</ConfigExtId>
+                                </Module>
+                            </Modules>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
             </Paths>
         </PathTemplate>
     </PathTemplates>
     <FEDAIs>
         <FEDAI name="SSP Audio">
             <CaptureCapabilities>
-                <Formats>32</Formats>
+                <Formats>24, 32</Formats>
                 <Rates>48000</Rates>
                 <Channels>2</Channels>
             </CaptureCapabilities>
             <PlaybackCapabilities>
-                <Formats>32</Formats>
+                <Formats>24, 32</Formats>
                 <Rates>48000</Rates>
                 <Channels>2</Channels>
             </PlaybackCapabilities>
