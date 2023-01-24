@@ -568,6 +568,10 @@
                     </Pipelines>
                 </Path>
             </Paths>
+            <VolumeMixer>
+                <Name>DMIC Volume</Name>
+                <Max>0x7FFFFFFF</Max>
+            </VolumeMixer>
         </PathTemplate>
         <PathTemplate id="1" widget_name="DMIC BE">
             <Paths>
