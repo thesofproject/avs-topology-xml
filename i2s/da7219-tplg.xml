@@ -110,7 +110,7 @@
             <Paths>
                 <Path id="0">
                     <FEAudioFormatId>0</FEAudioFormatId>
-                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <BEAudioFormatId>1</BEAudioFormatId>
                     <Pipelines>
                         <Pipeline id="0">
                             <BindingId>0</BindingId>
@@ -131,7 +131,7 @@
             <Paths>
                 <Path id="0">
                     <FEAudioFormatId>0</FEAudioFormatId>
-                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <BEAudioFormatId>1</BEAudioFormatId>
                     <Pipelines>
                         <Pipeline id="0">
                             <ConfigId>0</ConfigId>
@@ -151,7 +151,7 @@
             <Paths>
                 <Path id="0">
                     <FEAudioFormatId>0</FEAudioFormatId>
-                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <BEAudioFormatId>1</BEAudioFormatId>
                     <Pipelines>
                         <Pipeline id="0">
                             <BindingId>1</BindingId>
@@ -172,7 +172,7 @@
             <Paths>
                 <Path id="0">
                     <FEAudioFormatId>0</FEAudioFormatId>
-                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <BEAudioFormatId>1</BEAudioFormatId>
                     <Pipelines>
                         <Pipeline id="0">
                             <ConfigId>0</ConfigId>
