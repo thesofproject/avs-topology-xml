@@ -272,12 +272,12 @@
     <FEDAIs>
         <FEDAI name="HDAudio Analog">
             <CaptureCapabilities>
-                <Formats>16, 24, 32</Formats>
+                <Formats>16, 24</Formats>
                 <Rates>48000</Rates>
                 <Channels>2</Channels>
             </CaptureCapabilities>
             <PlaybackCapabilities>
-                <Formats>16, 24, 32</Formats>
+                <Formats>16, 24</Formats>
                 <Rates>48000</Rates>
                 <Channels>2</Channels>
             </PlaybackCapabilities>
