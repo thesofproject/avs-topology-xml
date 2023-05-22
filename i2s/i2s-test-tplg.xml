@@ -29,7 +29,7 @@
             <CprOutAudioFormatId>0</CprOutAudioFormatId>
             <CprFeatureMask>0</CprFeatureMask>
             <CprDMAType>1</CprDMAType>
-            <CprDMABufferSize>15360</CprDMABufferSize>
+            <CprDMABufferSize>768</CprDMABufferSize>
         </ModuleConfigExt>
         <ModuleConfigExt id="1">
             <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
@@ -37,14 +37,14 @@
             <CprFeatureMask>0</CprFeatureMask>
             <CprVirtualIndex>0</CprVirtualIndex>
             <CprDMAType>13</CprDMAType>
-            <CprDMABufferSize>15360</CprDMABufferSize>
+            <CprDMABufferSize>1536</CprDMABufferSize>
         </ModuleConfigExt>
         <ModuleConfigExt id="2">
             <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
             <CprOutAudioFormatId>0</CprOutAudioFormatId>
             <CprFeatureMask>0</CprFeatureMask>
             <CprDMAType>0</CprDMAType>
-            <CprDMABufferSize>15360</CprDMABufferSize>
+            <CprDMABufferSize>768</CprDMABufferSize>
         </ModuleConfigExt>
         <ModuleConfigExt id="3">
             <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
@@ -52,7 +52,7 @@
             <CprFeatureMask>0</CprFeatureMask>
             <CprVirtualIndex>0</CprVirtualIndex>
             <CprDMAType>12</CprDMAType>
-            <CprDMABufferSize>15360</CprDMABufferSize>
+            <CprDMABufferSize>1536</CprDMABufferSize>
         </ModuleConfigExt>
     </ModuleConfigsExt>
     <PipelineConfigs>
