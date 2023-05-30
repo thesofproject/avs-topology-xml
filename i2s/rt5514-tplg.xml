@@ -1,0 +1,138 @@
+<Topology>
+    <Name>avs_rt5514_ssp%d</Name>
+    <Libraries>
+    </Libraries>
+    <AudioFormats>
+        <AudioFormat id="0">
+            <SampleRate>48000</SampleRate>
+            <BitDepth>32</BitDepth>
+            <ChannelMap>0xFFFF3210</ChannelMap>
+            <ChannelConfig>5</ChannelConfig>
+            <Interleaving>0</Interleaving>
+            <NumChannels>4</NumChannels>
+            <ValidBitDepth>16</ValidBitDepth>
+            <SampleType>0</SampleType>
+        </AudioFormat>
+        <AudioFormat id="1">
+            <SampleRate>48000</SampleRate>
+            <BitDepth>16</BitDepth>
+            <ChannelMap>0xFFFF3210</ChannelMap>
+            <ChannelConfig>5</ChannelConfig>
+            <Interleaving>0</Interleaving>
+            <NumChannels>4</NumChannels>
+            <ValidBitDepth>16</ValidBitDepth>
+            <SampleType>0</SampleType>
+        </AudioFormat>
+    </AudioFormats>
+    <ModuleConfigsBase>
+        <ModuleConfigBase id="0">
+            <Cpc>14473</Cpc>
+            <Ibs>768</Ibs>
+            <Obs>384</Obs>
+            <Pages>0</Pages>
+        </ModuleConfigBase>
+        <ModuleConfigBase id="1">
+            <Cpc>14473</Cpc>
+            <Ibs>384</Ibs>
+            <Obs>384</Obs>
+            <Pages>0</Pages>
+        </ModuleConfigBase>
+    </ModuleConfigsBase>
+    <ModuleConfigsExt>
+        <ModuleConfigExt id="0">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+            <CprOutAudioFormatId>1</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprDMAType>1</CprDMAType>
+            <CprDMABufferSize>768</CprDMABufferSize>
+        </ModuleConfigExt>
+        <ModuleConfigExt id="1">
+            <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
+	    <CprBlobFormatId>1</CprBlobFormatId>
+            <CprOutAudioFormatId>1</CprOutAudioFormatId>
+            <CprFeatureMask>0</CprFeatureMask>
+            <CprDMAType>13</CprDMAType>
+            <CprDMABufferSize>3072</CprDMABufferSize>
+        </ModuleConfigExt>
+    </ModuleConfigsExt>
+    <PipelineConfigs>
+        <PipelineConfig id="0">
+            <RequiredSize>2</RequiredSize>
+            <Priority>0</Priority>
+            <LowPower>false</LowPower>
+            <Trigger>0</Trigger>
+        </PipelineConfig>
+    </PipelineConfigs>
+    <Bindings>
+        <Binding id="0">
+            <TargetTopologyName>avs_rt5514_ssp%d</TargetTopologyName>
+            <TargetPathTemplateId>1</TargetPathTemplateId>
+            <TargetPipelineId>0</TargetPipelineId>
+            <TargetModuleId>0</TargetModuleId>
+            <TargetModulePin>0</TargetModulePin>
+            <ModulePin>0</ModulePin>
+            <IsSink>true</IsSink>
+        </Binding>
+    </Bindings>
+    <PathTemplates>
+        <PathTemplate id="0" widget_name="ssp%dc_fe">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>1</FEAudioFormatId>
+                    <BEAudioFormatId>1</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <BindingId>0</BindingId>
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>1</ConfigBaseId>
+                                    <InAudioFormatId>1</InAudioFormatId>
+                                    <ConfigExtId>0</ConfigExtId>
+                                </Module>
+                            </Modules>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+        <PathTemplate id="1" widget_name="ssp%dc_be">
+            <Paths>
+                <Path id="0">
+                    <FEAudioFormatId>1</FEAudioFormatId>
+                    <BEAudioFormatId>1</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>1</ConfigExtId>
+                                </Module>
+                            </Modules>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
+            </Paths>
+        </PathTemplate>
+    </PathTemplates>
+    <FEDAIs>
+        <FEDAI name="Digital Microphone">
+            <CaptureCapabilities>
+                <Formats>16</Formats>
+                <Rates>48000</Rates>
+                <Channels>4</Channels>
+            </CaptureCapabilities>
+        </FEDAI>
+    </FEDAIs>
+    <Graphs>
+        <Graph name="Digital Microphone-capture_ssp%d_Rx">
+            <Routes>
+                <Route sink="Digital Microphone-capture" source="ssp%dc_fe"/>
+                <Route sink="ssp%dc_fe" source="ssp%dc_be"/>
+                <Route sink="ssp%dc_be" source="ssp%d Rx"/>
+            </Routes>
+        </Graph>
+    </Graphs>
+</Topology>
