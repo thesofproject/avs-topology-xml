@@ -17,7 +17,7 @@
     </AudioFormats>
     <ModuleConfigsBase>
         <ModuleConfigBase id="0">
-            <Cpc>10000</Cpc>
+            <Cpc>14000</Cpc>
             <Ibs>384</Ibs>
             <Obs>384</Obs>
             <Pages>0</Pages>
