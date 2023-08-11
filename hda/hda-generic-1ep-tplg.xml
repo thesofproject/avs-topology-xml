@@ -125,11 +125,11 @@
                 <Path id="0">
                     <FEAudioFormatId>0</FEAudioFormatId>
                     <BEAudioFormatId>0</BEAudioFormatId>
-                    <Pipelines> 
+                    <Pipelines>
                         <Pipeline id="0">
                             <ConfigId>0</ConfigId>
                             <Modules>
-                                <Module id ="0">
+                                <Module id="0">
                                     <ConfigBaseId>0</ConfigBaseId>
                                     <InAudioFormatId>0</InAudioFormatId>
                                     <ConfigExtId>0</ConfigExtId>
@@ -142,11 +142,11 @@
                 <Path id="1">
                     <FEAudioFormatId>1</FEAudioFormatId>
                     <BEAudioFormatId>0</BEAudioFormatId>
-                    <Pipelines> 
+                    <Pipelines>
                         <Pipeline id="0">
                             <ConfigId>0</ConfigId>
                             <Modules>
-                                <Module id ="0">
+                                <Module id="0">
                                     <ConfigBaseId>0</ConfigBaseId>
                                     <InAudioFormatId>0</InAudioFormatId>
                                     <ConfigExtId>5</ConfigExtId>
@@ -163,11 +163,11 @@
                 <Path id="0">
                     <FEAudioFormatId>0</FEAudioFormatId>
                     <BEAudioFormatId>0</BEAudioFormatId>
-                    <Pipelines> 
+                    <Pipelines>
                         <Pipeline id="0">
                             <ConfigId>0</ConfigId>
                             <Modules>
-                                <Module id ="0">
+                                <Module id="0">
                                     <ConfigBaseId>0</ConfigBaseId>
                                     <InAudioFormatId>0</InAudioFormatId>
                                     <ConfigExtId>1</ConfigExtId>
@@ -179,11 +179,11 @@
                 <Path id="1">
                     <FEAudioFormatId>1</FEAudioFormatId>
                     <BEAudioFormatId>0</BEAudioFormatId>
-                    <Pipelines> 
+                    <Pipelines>
                         <Pipeline id="0">
                             <ConfigId>0</ConfigId>
                             <Modules>
-                                <Module id ="0">
+                                <Module id="0">
                                     <ConfigBaseId>0</ConfigBaseId>
                                     <InAudioFormatId>0</InAudioFormatId>
                                     <ConfigExtId>1</ConfigExtId>
@@ -199,11 +199,11 @@
                 <Path id="0">
                     <FEAudioFormatId>0</FEAudioFormatId>
                     <BEAudioFormatId>0</BEAudioFormatId>
-                    <Pipelines> 
+                    <Pipelines>
                         <Pipeline id="0">
                             <ConfigId>0</ConfigId>
                             <Modules>
-                                <Module id ="0">
+                                <Module id="0">
                                     <ConfigBaseId>0</ConfigBaseId>
                                     <InAudioFormatId>0</InAudioFormatId>
                                     <ConfigExtId>2</ConfigExtId>
@@ -216,11 +216,11 @@
                 <Path id="1">
                     <FEAudioFormatId>1</FEAudioFormatId>
                     <BEAudioFormatId>0</BEAudioFormatId>
-                    <Pipelines> 
+                    <Pipelines>
                         <Pipeline id="0">
                             <ConfigId>0</ConfigId>
                             <Modules>
-                                <Module id ="0">
+                                <Module id="0">
                                     <ConfigBaseId>0</ConfigBaseId>
                                     <InAudioFormatId>0</InAudioFormatId>
                                     <ConfigExtId>4</ConfigExtId>
@@ -237,11 +237,11 @@
                 <Path id="0">
                     <FEAudioFormatId>0</FEAudioFormatId>
                     <BEAudioFormatId>0</BEAudioFormatId>
-                    <Pipelines> 
+                    <Pipelines>
                         <Pipeline id="0">
                             <ConfigId>0</ConfigId>
                             <Modules>
-                                <Module id ="0">
+                                <Module id="0">
                                     <ConfigBaseId>0</ConfigBaseId>
                                     <InAudioFormatId>0</InAudioFormatId>
                                     <ConfigExtId>3</ConfigExtId>
@@ -253,11 +253,11 @@
                 <Path id="1">
                     <FEAudioFormatId>1</FEAudioFormatId>
                     <BEAudioFormatId>0</BEAudioFormatId>
-                    <Pipelines> 
+                    <Pipelines>
                         <Pipeline id="0">
                             <ConfigId>0</ConfigId>
                             <Modules>
-                                <Module id ="0">
+                                <Module id="0">
                                     <ConfigBaseId>0</ConfigBaseId>
                                     <InAudioFormatId>0</InAudioFormatId>
                                     <ConfigExtId>3</ConfigExtId>
