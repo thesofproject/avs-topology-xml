@@ -276,12 +276,12 @@
     <FEDAIs>
         <FEDAI name="SSP Audio">
             <CaptureCapabilities>
-                <Formats>24, 32</Formats>
+                <Formats>32</Formats>
                 <Rates>48000</Rates>
                 <Channels>2</Channels>
             </CaptureCapabilities>
             <PlaybackCapabilities>
-                <Formats>24, 32</Formats>
+                <Formats>32</Formats>
                 <Rates>48000</Rates>
                 <Channels>2</Channels>
             </PlaybackCapabilities>
