@@ -83,7 +83,7 @@ while (<$INFILE>) {
 
 		# Push stack only when '>' is on its own.
 		# TODO: mixed '<node> <!-- comment -->' not supported.
-		if ($current_node !~ /[-|\/|\?]>$/) {
+		if ($current_node !~ /<\/|[-|\/|\?]>$/) {
 			$depth++;
 		}
 		$current_node = "";
