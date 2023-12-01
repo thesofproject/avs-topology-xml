@@ -14,6 +14,16 @@
             <ValidBitDepth>24</ValidBitDepth>
             <SampleType>0</SampleType>
         </AudioFormat>      
+        <AudioFormat id="1">
+            <SampleRate>48000</SampleRate>
+            <BitDepth>32</BitDepth>
+            <ChannelMap>0xFFFFFF10</ChannelMap>
+            <ChannelConfig>1</ChannelConfig>
+            <Interleaving>0</Interleaving>
+            <NumChannels>2</NumChannels>
+            <ValidBitDepth>32</ValidBitDepth>
+            <SampleType>0</SampleType>
+        </AudioFormat>      
     </AudioFormats>
     <ModuleConfigsBase>
         <ModuleConfigBase id="0">
@@ -78,6 +88,23 @@
                         </Pipeline>
                     </Pipelines>
                 </Path>
+                <Path id="1">
+                    <FEAudioFormatId>1</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>0</ConfigExtId>
+                                </Module>
+                            </Modules>
+                            <BindingId>1</BindingId>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>
             </Paths>
         </PathTemplate>
         <PathTemplate id="1" widget_name="ssp%dp_be">
@@ -98,15 +125,32 @@
                         </Pipeline>
                     </Pipelines>
                 </Path>             
+                <Path id="1">
+                    <FEAudioFormatId>1</FEAudioFormatId>
+                    <BEAudioFormatId>0</BEAudioFormatId>
+                    <Pipelines>
+                        <Pipeline id="0">
+                            <ConfigId>0</ConfigId>
+                            <Modules>
+                                <Module id="0">
+                                    <ConfigBaseId>0</ConfigBaseId>
+                                    <InAudioFormatId>0</InAudioFormatId>
+                                    <ConfigExtId>1</ConfigExtId>
+                                </Module>
+                            </Modules>
+                        </Pipeline>
+                    </Pipelines>
+                </Path>             
             </Paths>
         </PathTemplate>        
     </PathTemplates>
     <FEDAIs>
         <FEDAI name="Speaker">
             <CaptureCapabilities>
-                <Formats>24</Formats>
+                <Formats>32</Formats>
                 <Rates>48000</Rates>
                 <Channels>2</Channels>
+		<SigBits>24</SigBits>
             </CaptureCapabilities>
         </FEDAI>
     </FEDAIs>
