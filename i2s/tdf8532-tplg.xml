@@ -709,19 +709,19 @@
     <FEDAIs>
         <FEDAI name="Bluetooth">
             <CaptureCapabilities>
-                <Formats>24, 32</Formats>
+                <Formats>32</Formats>
                 <Rates>48000</Rates>
                 <Channels>2</Channels>
             </CaptureCapabilities>
             <PlaybackCapabilities>
-                <Formats>24, 32</Formats>
+                <Formats>32</Formats>
                 <Rates>48000</Rates>
                 <Channels>2</Channels>
             </PlaybackCapabilities>
         </FEDAI>
         <FEDAI name="HDMI In">
             <CaptureCapabilities>
-                <Formats>24, 32</Formats>
+                <Formats>32</Formats>
                 <Rates>48000</Rates>
                 <Channels>2</Channels>
             </CaptureCapabilities>
@@ -754,7 +754,7 @@
         </FEDAI>
         <FEDAI name="Modem">
             <CaptureCapabilities>
-                <Formats>24, 32</Formats>
+                <Formats>32</Formats>
                 <Rates>48000</Rates>
                 <Channels>2</Channels>
             </CaptureCapabilities>
@@ -768,12 +768,12 @@
         </FEDAI>
         <FEDAI name="Test Pin">
             <CaptureCapabilities>
-                <Formats>24, 32</Formats>
+                <Formats>32</Formats>
                 <Rates>48000</Rates>
                 <Channels>2</Channels>
             </CaptureCapabilities>
             <PlaybackCapabilities>
-                <Formats>24, 32</Formats>
+                <Formats>32</Formats>
                 <Rates>48000</Rates>
                 <Channels>2</Channels>
             </PlaybackCapabilities>
