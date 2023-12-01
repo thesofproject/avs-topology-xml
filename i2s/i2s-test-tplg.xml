@@ -474,7 +474,7 @@
         </FEDAI>
     </FEDAIs>
     <Graphs>
-        <Graph name="SSP Audio-capture_ssp_Rx">
+        <Graph name="SSP Audio-capture_ssp%d_Rx">
             <Routes>
                 <Route sink="SSP Audio-capture" source="ssp%dc_fe"/>
                 <Route sink="ssp%dc_fe" source="ssp%dc_be"/>
