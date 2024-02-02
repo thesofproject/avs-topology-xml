@@ -23,6 +23,15 @@ clean :
 		$(MAKE) -C $$dir clean; \
 	done
 
+dist:
+	PWD=`pwd`
+	@mkdir -p "$(PWD)/avs-topology"
+	@for dir in $(SUBDIRS); do \
+		DESTDIR="$(PWD)/avs-topology" $(MAKE) -C $$dir install; \
+	done
+	@cp LICENSE "$(PWD)/avs-topology/"
+	tar -czf avs-topology.tar.gz avs-topology
+
 install:
 	@for dir in $(SUBDIRS); do \
 		$(MAKE) -C $$dir install; \
