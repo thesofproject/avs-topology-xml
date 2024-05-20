@@ -57,7 +57,6 @@
             <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
             <CprOutAudioFormatId>1</CprOutAudioFormatId>
             <CprFeatureMask>0</CprFeatureMask>
-            <CprVirtualIndex>16</CprVirtualIndex>
             <CprDMAType>13</CprDMAType>
             <CprDMABufferSize>768</CprDMABufferSize>
         </ModuleConfigExt>
@@ -72,7 +71,6 @@
             <UUID>9BA00C83-CA12-4A83-943C-1FA2E82F9DDA</UUID>
             <CprOutAudioFormatId>1</CprOutAudioFormatId>
             <CprFeatureMask>0</CprFeatureMask>
-            <CprVirtualIndex>16</CprVirtualIndex>
             <CprDMAType>12</CprDMAType>
             <CprDMABufferSize>768</CprDMABufferSize>
         </ModuleConfigExt>
