@@ -174,7 +174,6 @@
                     <Pipelines>
                         <Pipeline id="0">
                             <ConfigId>0</ConfigId>
-                            <ConfigId>0</ConfigId>
                             <Modules>
                                 <Module id="0">
                                     <ConfigBaseId>0</ConfigBaseId>
@@ -191,7 +190,6 @@
                     <BEAudioFormatId>0</BEAudioFormatId>
                     <Pipelines>
                         <Pipeline id="0">
-                            <ConfigId>0</ConfigId>
                             <ConfigId>0</ConfigId>
                             <Modules>
                                 <Module id="0">
