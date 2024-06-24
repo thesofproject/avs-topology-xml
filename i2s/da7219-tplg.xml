@@ -111,7 +111,6 @@
                     <BEAudioFormatId>1</BEAudioFormatId>
                     <Pipelines>
                         <Pipeline id="0">
-                            <BindingId>0</BindingId>
                             <ConfigId>0</ConfigId>
                             <Modules>
                                 <Module id="0">
@@ -120,6 +119,7 @@
                                     <ConfigExtId>0</ConfigExtId>
                                 </Module>
                             </Modules>
+                            <BindingId>0</BindingId>
                         </Pipeline>
                     </Pipelines>
                 </Path>
@@ -152,7 +152,6 @@
                     <BEAudioFormatId>1</BEAudioFormatId>
                     <Pipelines>
                         <Pipeline id="0">
-                            <BindingId>1</BindingId>
                             <ConfigId>0</ConfigId>
                             <Modules>
                                 <Module id="0">
@@ -161,6 +160,7 @@
                                     <ConfigExtId>2</ConfigExtId>
                                 </Module>
                             </Modules>
+                            <BindingId>1</BindingId>
                         </Pipeline>
                     </Pipelines>
                 </Path>
