@@ -84,7 +84,7 @@
                                     <ConfigExtId>0</ConfigExtId>
                                 </Module>
                             </Modules>
-                            <BindingId>1</BindingId>
+                            <BindingId>0</BindingId>
                         </Pipeline>
                     </Pipelines>
                 </Path>
@@ -101,7 +101,7 @@
                                     <ConfigExtId>0</ConfigExtId>
                                 </Module>
                             </Modules>
-                            <BindingId>1</BindingId>
+                            <BindingId>0</BindingId>
                         </Pipeline>
                     </Pipelines>
                 </Path>
