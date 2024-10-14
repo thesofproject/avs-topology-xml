@@ -146,12 +146,12 @@
     </PathTemplates>
     <FEDAIs>
         <FEDAI name="Speaker">
-            <CaptureCapabilities>
+            <PlaybackCapabilities>
                 <Formats>32</Formats>
                 <Rates>48000</Rates>
                 <Channels>2</Channels>
-		<SigBits>24</SigBits>
-            </CaptureCapabilities>
+                <SigBits>24</SigBits>
+            </PlaybackCapabilities>
         </FEDAI>
     </FEDAIs>
     <Graphs>
