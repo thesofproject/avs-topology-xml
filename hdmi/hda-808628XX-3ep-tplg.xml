@@ -202,21 +202,21 @@
         </PathTemplate>
     </PathTemplates>
     <FEDAIs>
-        <FEDAI name="HDMI1">
+        <FEDAI id="0" name="HDMI1">
             <PlaybackCapabilities>
                 <Formats>16</Formats>
                 <Rates>48000</Rates>
                 <Channels>2</Channels>
             </PlaybackCapabilities>
         </FEDAI>
-        <FEDAI name="HDMI2">
+        <FEDAI id="1" name="HDMI2">
             <PlaybackCapabilities>
                 <Formats>16</Formats>
                 <Rates>48000</Rates>
                 <Channels>2</Channels>
             </PlaybackCapabilities>
         </FEDAI>
-        <FEDAI name="HDMI3">
+        <FEDAI id="2" name="HDMI3">
             <PlaybackCapabilities>
                 <Formats>16</Formats>
                 <Rates>48000</Rates>
