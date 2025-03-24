@@ -310,7 +310,7 @@
         </PathTemplate>
     </PathTemplates>
     <FEDAIs>
-        <FEDAI name="Audio">
+        <FEDAI id="0" name="Audio">
             <CaptureCapabilities>
                 <Formats>16, 32</Formats>
                 <Rates>48000</Rates>
